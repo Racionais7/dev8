@@ -1,0 +1,46 @@
+# Dependencies
+node_modules/
+
+# Production builds
+/build
+dist/
+
+# Environment files
+*.env
+*.env.*
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# System files
+.DS_Store
+*.pem
+
+# Python
+__pycache__/
+*.pyc
+venv/
+
+# IDE
+.idea/
+.vscode/
+
+# Cache
+.cache/
+.ruff_cache/
+
+# ZIP files
+*.zip
+
+# Emergent (internal)
+.emergent/
+-e 
+# Environment files
+*.env
+*.env.*
+-e 
+# Environment files
+*.env
+*.env.*
