@@ -82,7 +82,7 @@ const ProviderLogos = {
     <img 
       src="/assets/providers/amigo.png" 
       alt="Amigo Gaming" 
-      className="h-6 w-auto object-contain"
+      className="h-8 w-auto object-contain"
     />
   ),
   microgaming: () => (
