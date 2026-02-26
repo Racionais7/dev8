@@ -63,7 +63,7 @@ const PG_NEW_ORDER = [
   "Cocktail Nights"
 ];
 
-// PG SOFT GAMES - Novo ranking para AG, BG, WG (28 jogos)
+// PG SOFT GAMES - Novo ranking para AG, BG, WG (28 jogos com NOMES EM INGLÊS)
 const pgNewGamesData = {
   "Fortune Tiger": {
     id: 1,
@@ -92,9 +92,9 @@ const pgNewGamesData = {
     category: "Fortune",
     provider: "pg"
   },
-  "Dragão da Fortuna": {
+  "Fortune Dragon": {
     id: 4,
-    name: "Dragão da Fortuna",
+    name: "Fortune Dragon",
     image: "/images/pg-new/Dragão da Fortuna.png",
     bets: ["R$ 0,50", "R$ 3,50", "R$ 4,00"],
     basePayout: 88,
@@ -110,9 +110,9 @@ const pgNewGamesData = {
     category: "Party",
     provider: "pg"
   },
-  "Cobra da Fortuna": {
+  "Fortune Snake": {
     id: 6,
-    name: "Cobra da Fortuna",
+    name: "Fortune Snake",
     image: "/images/pg-new/Cobra da Fortuna.png",
     bets: ["R$ 0,40", "R$ 3,60", "R$ 4,00"],
     basePayout: 85,
@@ -155,9 +155,9 @@ const pgNewGamesData = {
     category: "Money",
     provider: "pg"
   },
-  "Missão do Tesouro do Dragão": {
+  "Dragon Treasure": {
     id: 11,
-    name: "Missão do Tesouro do Dragão",
+    name: "Dragon Treasure",
     image: "/images/pg-new/Missão do Tesouro do Dragão.png",
     bets: ["R$ 0,50", "R$ 2,50", "R$ 4,00"],
     basePayout: 89,
@@ -173,9 +173,9 @@ const pgNewGamesData = {
     category: "Western",
     provider: "pg"
   },
-  "Wild Ape#3258": {
+  "Wild Ape #3258": {
     id: 13,
-    name: "Wild Ape#3258",
+    name: "Wild Ape #3258",
     image: "/images/pg-new/Wild Ape#3258.png",
     bets: ["R$ 0,50", "R$ 2,00", "R$ 4,00"],
     basePayout: 84,
@@ -209,18 +209,18 @@ const pgNewGamesData = {
     category: "Hindu",
     provider: "pg"
   },
-  "Império Majestoso": {
+  "Majestic Kingdom": {
     id: 17,
-    name: "Império Majestoso",
+    name: "Majestic Kingdom",
     image: "/images/pg-new/Império Majestoso.png",
     bets: ["R$ 0,50", "R$ 3,00", "R$ 4,00"],
     basePayout: 86,
     category: "Kingdom",
     provider: "pg"
   },
-  "Dupla Fortuna": {
+  "Double Fortune": {
     id: 18,
-    name: "Dupla Fortuna",
+    name: "Double Fortune",
     image: "/images/pg-new/Dupla Fortuna.png",
     bets: ["R$ 0,50", "R$ 1,50", "R$ 3,00"],
     basePayout: 84,
@@ -272,27 +272,27 @@ const pgNewGamesData = {
     category: "Fantasy",
     provider: "pg"
   },
-  "Frenesi do Ouro do Kraken": {
+  "Kraken's Gold": {
     id: 24,
-    name: "Frenesi do Ouro do Kraken",
+    name: "Kraken's Gold",
     image: "/images/pg-new/Frenesi do Ouro do Kraken.png",
     bets: ["R$ 0,50", "R$ 3,00", "R$ 4,00"],
     basePayout: 86,
     category: "Sea",
     provider: "pg"
   },
-  "Recompensa dos Grimm Hansel e Gretel": {
+  "Grimm's Rewards": {
     id: 25,
-    name: "Recompensa dos Grimm Hansel e Gretel",
+    name: "Grimm's Rewards",
     image: "/images/pg-new/Recompensa dos Grimm Hansel e Gretel.png",
     bets: ["R$ 0,50", "R$ 2,00", "R$ 4,00"],
     basePayout: 84,
     category: "Fantasy",
     provider: "pg"
   },
-  "Futebol Fever": {
+  "Football Fever": {
     id: 26,
-    name: "Futebol Fever",
+    name: "Football Fever",
     image: "/images/pg-new/Futebol Fever.png",
     bets: ["R$ 0,50", "R$ 2,50", "R$ 4,00"],
     basePayout: 83,
