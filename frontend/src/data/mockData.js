@@ -320,6 +320,477 @@ const pgNewGamesData = {
 };
 
 // ═══════════════════════════════════════════════════════════════════════════════
+// PP (PRAGMATIC PLAY) - Novo ranking de 46 jogos para TODAS as plataformas
+// ═══════════════════════════════════════════════════════════════════════════════
+
+const PP_NEW_ORDER = [
+  "Zeus vs Hades – Gods of War",
+  "Sweet Bonanza Super Scatter",
+  "Lucky Tiger 1000",
+  "Sugar Rush",
+  "Gates of Olympus 1000",
+  "Gates of Olympus",
+  "Big Bass Boxing Bonus Round",
+  "Starlight Princess",
+  "Big Bass Bonanza 1000",
+  "Sugar Rush 1000",
+  "Lucky Monkey",
+  "Wild West Duels",
+  "The Dog House",
+  "Tropicana Club",
+  "Sweet Bonanza 1000",
+  "Starlight Princess 1000",
+  "Big Bass Secrets of the Golden Lake",
+  "Bigger Bass Bonanza",
+  "Joker's Jewels",
+  "Zombie Carnival",
+  "The Magic Cauldron",
+  "Bigger Bass Splash",
+  "Bounty Hunter",
+  "Candy Stars",
+  "After Hours 2",
+  "Mermaid Riches",
+  "Big Bass Splash 1000",
+  "Big Bass Floats My Boat",
+  "Fire Strike 2",
+  "Starlight Princess Super",
+  "Gates of Hades",
+  "3 Buzzing Wilds",
+  "Book of Cairo",
+  "Lucky Dog",
+  "Lucky Mouse",
+  "Lucky Ox",
+  "Captain Kraken Megaways",
+  "Wild West Gold: Blazing Bounty",
+  "Big Bass Halloween 2",
+  "Gates of Olympus 1000 Dice",
+  "Lobster Bob's Sea Food & Win It",
+  "Genie's Gems",
+  "Sweet Bonanza 1000 Dice",
+  "Big Bass Mission Fishin'",
+  "Dino Drop",
+  "Finger Lickin' Free Spins"
+];
+
+// PP GAMES - Novo ranking para TODAS as plataformas (46 jogos)
+const ppNewGamesData = {
+  "Zeus vs Hades – Gods of War": {
+    id: 101,
+    name: "Zeus vs Hades – Gods of War",
+    image: "/images/pp-new/Zeus vs Hades - Gods of War.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"],
+    basePayout: 91,
+    category: "Greek",
+    provider: "pp"
+  },
+  "Sweet Bonanza Super Scatter": {
+    id: 102,
+    name: "Sweet Bonanza Super Scatter",
+    image: "/images/pp-new/Sweet Bonanza Super Dispersão.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"],
+    basePayout: 93,
+    category: "Candy",
+    provider: "pp"
+  },
+  "Lucky Tiger 1000": {
+    id: 103,
+    name: "Lucky Tiger 1000",
+    image: "/images/pp-new/Tigre Sortudo 1000.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"],
+    basePayout: 92,
+    category: "Fortune",
+    provider: "pp"
+  },
+  "Sugar Rush": {
+    id: 104,
+    name: "Sugar Rush",
+    image: "/images/pp-new/Sweet Rush Bonanza.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"],
+    basePayout: 87,
+    category: "Sweet",
+    provider: "pp"
+  },
+  "Gates of Olympus 1000": {
+    id: 105,
+    name: "Gates of Olympus 1000",
+    image: "/images/pp-new/Gates of Olympus 1000.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"],
+    basePayout: 92,
+    category: "Greek",
+    provider: "pp"
+  },
+  "Gates of Olympus": {
+    id: 106,
+    name: "Gates of Olympus",
+    image: "/images/pp-new/Portas de Olympus.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"],
+    basePayout: 89,
+    category: "Greek",
+    provider: "pp"
+  },
+  "Big Bass Boxing Bonus Round": {
+    id: 107,
+    name: "Big Bass Boxing Bonus Round",
+    image: "/images/pp-new/Ronda Bónus de Boxe do Big Bass.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"],
+    basePayout: 88,
+    category: "Fishing",
+    provider: "pp"
+  },
+  "Starlight Princess": {
+    id: 108,
+    name: "Starlight Princess",
+    image: "/images/pp-new/Vitórias da Luz das Estrelas.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"],
+    basePayout: 94,
+    category: "Fantasy",
+    provider: "pp"
+  },
+  "Big Bass Bonanza 1000": {
+    id: 109,
+    name: "Big Bass Bonanza 1000",
+    image: "/images/pp-new/Bonança do Bass Gigante 1000.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"],
+    basePayout: 91,
+    category: "Fishing",
+    provider: "pp"
+  },
+  "Sugar Rush 1000": {
+    id: 110,
+    name: "Sugar Rush 1000",
+    image: "/images/pp-new/Sugar Rush 1000.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"],
+    basePayout: 91,
+    category: "Sweet",
+    provider: "pp"
+  },
+  "Lucky Monkey": {
+    id: 111,
+    name: "Lucky Monkey",
+    image: "/images/pp-new/Macaco Sortudo.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"],
+    basePayout: 86,
+    category: "Fortune",
+    provider: "pp"
+  },
+  "Wild West Duels": {
+    id: 112,
+    name: "Wild West Duels",
+    image: "/images/pp-new/Wild West Duels.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"],
+    basePayout: 88,
+    category: "Western",
+    provider: "pp"
+  },
+  "The Dog House": {
+    id: 113,
+    name: "The Dog House",
+    image: "/images/pp-new/Casa da Lagosta.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"],
+    basePayout: 85,
+    category: "Animal",
+    provider: "pp"
+  },
+  "Tropicana Club": {
+    id: 114,
+    name: "Tropicana Club",
+    image: "/images/pp-new/Clube Tropicana – Hora Feliz.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"],
+    basePayout: 84,
+    category: "Party",
+    provider: "pp"
+  },
+  "Sweet Bonanza 1000": {
+    id: 115,
+    name: "Sweet Bonanza 1000",
+    image: "/images/pp-new/Sweet Bonanza 1000.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"],
+    basePayout: 95,
+    category: "Candy",
+    provider: "pp"
+  },
+  "Starlight Princess 1000": {
+    id: 116,
+    name: "Starlight Princess 1000",
+    image: "/images/pp-new/Princesa da Luz Estelar Super Brilhante.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"],
+    basePayout: 94,
+    category: "Fantasy",
+    provider: "pp"
+  },
+  "Big Bass Secrets of the Golden Lake": {
+    id: 117,
+    name: "Big Bass Secrets of the Golden Lake",
+    image: "/images/pp-new/Big Bass Secrets of the Golden Lake.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"],
+    basePayout: 88,
+    category: "Fishing",
+    provider: "pp"
+  },
+  "Bigger Bass Bonanza": {
+    id: 118,
+    name: "Bigger Bass Bonanza",
+    image: "/images/pp-new/Grande Bass Reel Repetir.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"],
+    basePayout: 87,
+    category: "Fishing",
+    provider: "pp"
+  },
+  "Joker's Jewels": {
+    id: 119,
+    name: "Joker's Jewels",
+    image: "/images/pp-new/Joker's Jewels.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"],
+    basePayout: 83,
+    category: "Classic",
+    provider: "pp"
+  },
+  "Zombie Carnival": {
+    id: 120,
+    name: "Zombie Carnival",
+    image: "/images/pp-new/Escola Zumbi Megaways.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"],
+    basePayout: 86,
+    category: "Horror",
+    provider: "pp"
+  },
+  "The Magic Cauldron": {
+    id: 121,
+    name: "The Magic Cauldron",
+    image: "/images/pp-new/Mestre de Feitiços.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"],
+    basePayout: 85,
+    category: "Fantasy",
+    provider: "pp"
+  },
+  "Bigger Bass Splash": {
+    id: 122,
+    name: "Bigger Bass Splash",
+    image: "/images/pp-new/Bigger Bass Splash.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"],
+    basePayout: 87,
+    category: "Fishing",
+    provider: "pp"
+  },
+  "Bounty Hunter": {
+    id: 123,
+    name: "Bounty Hunter",
+    image: "/images/pp-new/Caçador de Recompensas.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"],
+    basePayout: 86,
+    category: "Western",
+    provider: "pp"
+  },
+  "Candy Stars": {
+    id: 124,
+    name: "Candy Stars",
+    image: "/images/pp-new/Centenas e Milhares.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"],
+    basePayout: 84,
+    category: "Candy",
+    provider: "pp"
+  },
+  "After Hours 2": {
+    id: 125,
+    name: "After Hours 2",
+    image: "/images/pp-new/Festa de Ouro 2 Depois do Expediente.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"],
+    basePayout: 85,
+    category: "Party",
+    provider: "pp"
+  },
+  "Mermaid Riches": {
+    id: 126,
+    name: "Mermaid Riches",
+    image: "/images/pp-new/Tesouro da Sereia.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"],
+    basePayout: 86,
+    category: "Sea",
+    provider: "pp"
+  },
+  "Big Bass Splash 1000": {
+    id: 127,
+    name: "Big Bass Splash 1000",
+    image: "/images/pp-new/Big Bass Respingo 1000.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"],
+    basePayout: 90,
+    category: "Fishing",
+    provider: "pp"
+  },
+  "Big Bass Floats My Boat": {
+    id: 128,
+    name: "Big Bass Floats My Boat",
+    image: "/images/pp-new/Big Bass Floats My Boat.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"],
+    basePayout: 87,
+    category: "Fishing",
+    provider: "pp"
+  },
+  "Fire Strike 2": {
+    id: 129,
+    name: "Fire Strike 2",
+    image: "/images/pp-new/Estampida de Fogo 2.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"],
+    basePayout: 85,
+    category: "Fire",
+    provider: "pp"
+  },
+  "Starlight Princess Super": {
+    id: 130,
+    name: "Starlight Princess Super",
+    image: "/images/pp-new/Portões do Olimpo Super Dispersão.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"],
+    basePayout: 93,
+    category: "Fantasy",
+    provider: "pp"
+  },
+  "Gates of Hades": {
+    id: 131,
+    name: "Gates of Hades",
+    image: "/images/pp-new/Portões do Hades.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"],
+    basePayout: 90,
+    category: "Greek",
+    provider: "pp"
+  },
+  "3 Buzzing Wilds": {
+    id: 132,
+    name: "3 Buzzing Wilds",
+    image: "/images/pp-new/3 Buzzing Wilds.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"],
+    basePayout: 86,
+    category: "Animal",
+    provider: "pp"
+  },
+  "Book of Cairo": {
+    id: 133,
+    name: "Book of Cairo",
+    image: "/images/pp-new/Código do Cairo.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"],
+    basePayout: 87,
+    category: "Egyptian",
+    provider: "pp"
+  },
+  "Lucky Dog": {
+    id: 134,
+    name: "Lucky Dog",
+    image: "/images/pp-new/Cão Sortudo.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"],
+    basePayout: 84,
+    category: "Fortune",
+    provider: "pp"
+  },
+  "Lucky Mouse": {
+    id: 135,
+    name: "Lucky Mouse",
+    image: "/images/pp-new/Ratinho Sortudo.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"],
+    basePayout: 84,
+    category: "Fortune",
+    provider: "pp"
+  },
+  "Lucky Ox": {
+    id: 136,
+    name: "Lucky Ox",
+    image: "/images/pp-new/Touro Sortudo.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"],
+    basePayout: 85,
+    category: "Fortune",
+    provider: "pp"
+  },
+  "Captain Kraken Megaways": {
+    id: 137,
+    name: "Captain Kraken Megaways",
+    image: "/images/pp-new/Capitão Kraken Megaways.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"],
+    basePayout: 88,
+    category: "Sea",
+    provider: "pp"
+  },
+  "Wild West Gold: Blazing Bounty": {
+    id: 138,
+    name: "Wild West Gold: Blazing Bounty",
+    image: "/images/pp-new/Ouro Selvagem do Oeste Recompensa Ardente.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"],
+    basePayout: 89,
+    category: "Western",
+    provider: "pp"
+  },
+  "Big Bass Halloween 2": {
+    id: 139,
+    name: "Big Bass Halloween 2",
+    image: "/images/pp-new/Big Bass Halloween 2.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"],
+    basePayout: 86,
+    category: "Horror",
+    provider: "pp"
+  },
+  "Gates of Olympus 1000 Dice": {
+    id: 140,
+    name: "Gates of Olympus 1000 Dice",
+    image: "/images/pp-new/Portões do Olimpo 1000 Dados.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"],
+    basePayout: 91,
+    category: "Greek",
+    provider: "pp"
+  },
+  "Lobster Bob's Sea Food & Win It": {
+    id: 141,
+    name: "Lobster Bob's Sea Food & Win It",
+    image: "/images/pp-new/Bigger Barn House Bonanza.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"],
+    basePayout: 85,
+    category: "Sea",
+    provider: "pp"
+  },
+  "Genie's Gems": {
+    id: 142,
+    name: "Genie's Gems",
+    image: "/images/pp-new/Bonança de Gemas do Gênio.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"],
+    basePayout: 86,
+    category: "Fantasy",
+    provider: "pp"
+  },
+  "Sweet Bonanza 1000 Dice": {
+    id: 143,
+    name: "Sweet Bonanza 1000 Dice",
+    image: "/images/pp-new/Sweet Bonanza 1000 Dados.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"],
+    basePayout: 94,
+    category: "Candy",
+    provider: "pp"
+  },
+  "Big Bass Mission Fishin'": {
+    id: 144,
+    name: "Big Bass Mission Fishin'",
+    image: "/images/pp-new/Big Bass Mission Fishin.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"],
+    basePayout: 87,
+    category: "Fishing",
+    provider: "pp"
+  },
+  "Dino Drop": {
+    id: 145,
+    name: "Dino Drop",
+    image: "/images/pp-new/Queda de Dinossauro.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"],
+    basePayout: 85,
+    category: "Animal",
+    provider: "pp"
+  },
+  "Finger Lickin' Free Spins": {
+    id: 146,
+    name: "Finger Lickin' Free Spins",
+    image: "/images/pp-new/Rodadas Grátis de Lamber os Dedos.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"],
+    basePayout: 84,
+    category: "Food",
+    provider: "pp"
+  }
+};
+
+// ═══════════════════════════════════════════════════════════════════════════════
 // PLATAFORMAS ANTIGAS (YG, DG, MG, EG, HG, FG) - SEM ALTERAÇÃO
 // ═══════════════════════════════════════════════════════════════════════════════
 
