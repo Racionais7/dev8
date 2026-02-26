@@ -2597,55 +2597,49 @@ export const slotsDataByPlatform = {
     fachai: newFachaiGames
   },
   // YG, DG, MG, EG, HG, FG NÃO têm Amigo, Micro Gaming nem FA CHAI
+  // PP usa os jogos Pragmatic Play antigos
   YGJOGO: {
     pg: newPlatformGames,
-    pp: newPPGames,
-    pragmatic: oldPlatformGames.pragmatic,
+    pp: oldPlatformGames.pragmatic,
     spirit: oldPlatformGames.spirit,
     tada: oldPlatformGames.tada
   },
   DGJOGO: {
     pg: newPlatformGames,
-    pp: newPPGames,
-    pragmatic: oldPlatformGames.pragmatic,
+    pp: oldPlatformGames.pragmatic,
     spirit: oldPlatformGames.spirit,
     tada: oldPlatformGames.tada
   },
   MGJOGO: {
     pg: newPlatformGames,
-    pp: newPPGames,
-    pragmatic: oldPlatformGames.pragmatic,
+    pp: oldPlatformGames.pragmatic,
     spirit: oldPlatformGames.spirit,
     tada: oldPlatformGames.tada
   },
   EGJOGO: {
     pg: newPlatformGames,
-    pp: newPPGames,
-    pragmatic: oldPlatformGames.pragmatic,
+    pp: oldPlatformGames.pragmatic,
     spirit: oldPlatformGames.spirit,
     tada: oldPlatformGames.tada
   },
   HGJOGO: {
     pg: newPlatformGames,
-    pp: newPPGames,
-    pragmatic: oldPlatformGames.pragmatic,
+    pp: oldPlatformGames.pragmatic,
     spirit: oldPlatformGames.spirit,
     tada: oldPlatformGames.tada
   },
   FGJOGO: {
     pg: newPlatformGames,
-    pp: newPPGames,
-    pragmatic: oldPlatformGames.pragmatic,
+    pp: oldPlatformGames.pragmatic,
     spirit: oldPlatformGames.spirit,
     tada: oldPlatformGames.tada
   }
 };
 
-// Export padrão para compatibilidade (usa novos jogos PG e PP)
+// Export padrão para compatibilidade
 export const slotsData = {
   pg: newPlatformGames,
-  pp: newPPGames,
-  pragmatic: oldPlatformGames.pragmatic,
+  pp: oldPlatformGames.pragmatic,
   spirit: oldPlatformGames.spirit,
   tada: oldPlatformGames.tada,
   revenge: []
