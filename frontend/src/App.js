@@ -73,8 +73,26 @@ function App() {
     }
   }, [selectedPlatform]);
 
-  const currentSlots = slotsData[selectedProvider] || [];
-  const providerName = providers[selectedProvider] || '';
+  // Check if platform uses new providers (AG, BG, WG)
+  const newPlatforms = ['WGJOGO', 'AGJOGO', 'BGJOGO'];
+  const isNewPlatform = newPlatforms.includes(selectedPlatform);
+  
+  // Get slots based on platform type
+  const platformSlots = isNewPlatform 
+    ? slotsDataByPlatform[selectedPlatform] || {}
+    : slotsData;
+  
+  const currentSlots = isNewPlatform 
+    ? (platformSlots[selectedProvider] || [])
+    : (slotsData[selectedProvider] || []);
+  
+  // Get provider name based on platform
+  const providerList = isNewPlatform 
+    ? providersByPlatform[selectedPlatform] || providersByPlatform.DEFAULT
+    : providersByPlatform.DEFAULT;
+  
+  const providerInfo = providerList.find(p => p.id === selectedProvider);
+  const providerName = providerInfo?.name || providers[selectedProvider] || '';
   const currentPlatformLink = platformLinks[selectedPlatform] || '';
 
   if (showIntro) return <IntroAnimation onComplete={() => setShowIntro(false)} />;
