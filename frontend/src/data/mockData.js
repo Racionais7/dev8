@@ -45,7 +45,7 @@ const PG_NEW_ORDER = [
   "Cash Mania",
   "Dragon Treasure",
   "Wild Bandito",
-  "Wild Ape #3258",
+  "Wild Ape",
   "Anubis Wrath",
   "Chicky Run",
   "Ganesha Gold",
@@ -173,9 +173,9 @@ const pgNewGamesData = {
     category: "Western",
     provider: "pg"
   },
-  "Wild Ape #3258": {
+  "Wild Ape": {
     id: 13,
-    name: "Wild Ape #3258",
+    name: "Wild Ape",
     image: "/images/pg-new/Wild Ape#3258.png",
     bets: ["R$ 0,50", "R$ 2,00", "R$ 4,00"],
     basePayout: 84,
