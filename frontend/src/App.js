@@ -74,20 +74,16 @@ function App() {
   }, [selectedPlatform]);
 
   // Check if platform uses new providers (AG, BG, WG)
-  const newPlatforms = ['WGJOGO', 'AGJOGO', 'BGJOGO'];
-  const isNewPlatform = newPlatforms.includes(selectedPlatform);
+  const newProviderPlatforms = ['WGJOGO', 'AGJOGO', 'BGJOGO'];
+  const isNewProviderPlatform = newProviderPlatforms.includes(selectedPlatform);
   
-  // Get slots based on platform type
-  const platformSlots = isNewPlatform 
-    ? slotsDataByPlatform[selectedPlatform] || {}
-    : slotsData;
+  // Get slots based on platform - ALL platforms now use slotsDataByPlatform
+  const platformSlots = slotsDataByPlatform[selectedPlatform] || slotsData;
   
-  const currentSlots = isNewPlatform 
-    ? (platformSlots[selectedProvider] || [])
-    : (slotsData[selectedProvider] || []);
+  const currentSlots = platformSlots[selectedProvider] || [];
   
   // Get provider name based on platform
-  const providerList = isNewPlatform 
+  const providerList = isNewProviderPlatform 
     ? providersByPlatform[selectedPlatform] || providersByPlatform.DEFAULT
     : providersByPlatform.DEFAULT;
   
