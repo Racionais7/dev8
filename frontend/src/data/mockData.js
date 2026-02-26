@@ -1051,6 +1051,261 @@ const amigoGamesData = {
 };
 
 // ═══════════════════════════════════════════════════════════════════════════════
+// MICRO GAMING - 49 jogos APENAS para AG, BG, WG
+// ═══════════════════════════════════════════════════════════════════════════════
+
+const MICROGAMING_ORDER = [
+  "12 Skulls of the Dead",
+  "3 Angels Power Combo",
+  "3 Flaming Volcanoes Power Combo",
+  "Ancient Fortunes: Zeus",
+  "Andvari: The Golden Fish",
+  "African Adventure",
+  "Abundant Birds",
+  "Extreme Gold Blitz",
+  "Bronco Big Bounty",
+  "Blessing of Prosperity",
+  "Bass Capture Super Up",
+  "Carnival Party",
+  "Sweet Pot Combo",
+  "Ice Joker",
+  "Golden Dice",
+  "Diamond Diva Pig",
+  "Money on the Reels",
+  "Sweet Wild Rush 2",
+  "Frenetic Joker Explosion",
+  "Night Chicken Fever",
+  "Fire and Roses Joker",
+  "Fishin' Bigger Pots of Gold™",
+  "FlyX",
+  "Asgardian Fire",
+  "Golden Cat Fortunes",
+  "Treasure Gems",
+  "Hatching Gold! Rooster's Riches",
+  "Poseidon's Mighty Empire",
+  "Diamond Inferno",
+  "Lucky Twins Jackpot",
+  "Sugar Mania 8000",
+  "Monkey Bonanza",
+  "Solid Gold",
+  "Wild Treasure Stacks",
+  "Queen of Alexandria™",
+  "Reign of Fire",
+  "Extreme Money Lightning",
+  "Locked Riches of the Mummy",
+  "Dragon Rhythm Link&Win",
+  "Moonlight Romance – Awakening",
+  "African Wilds",
+  "Sweet Jar Christmas Combo",
+  "Stellar Treasure 7 Wilds",
+  "Tiger Treasures",
+  "Lost Treasures of Hades",
+  "Joker Loko Multiplier Trail",
+  "3 Aztec Riches Power Combo",
+  "Bears Make Bank! Power Combo",
+  "Go! Fishing Fortune Reels"
+];
+
+const microgamingGamesData = {
+  "12 Skulls of the Dead": {
+    id: 301, name: "12 Skulls of the Dead", image: "/images/microgaming/1.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 89, category: "Horror", provider: "microgaming"
+  },
+  "3 Angels Power Combo": {
+    id: 302, name: "3 Angels Power Combo", image: "/images/microgaming/2.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 87, category: "Fantasy", provider: "microgaming"
+  },
+  "3 Flaming Volcanoes Power Combo": {
+    id: 303, name: "3 Flaming Volcanoes Power Combo", image: "/images/microgaming/3.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 88, category: "Fire", provider: "microgaming"
+  },
+  "Ancient Fortunes: Zeus": {
+    id: 304, name: "Ancient Fortunes: Zeus", image: "/images/microgaming/4.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 91, category: "Greek", provider: "microgaming"
+  },
+  "Andvari: The Golden Fish": {
+    id: 305, name: "Andvari: The Golden Fish", image: "/images/microgaming/5.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 86, category: "Sea", provider: "microgaming"
+  },
+  "African Adventure": {
+    id: 306, name: "African Adventure", image: "/images/microgaming/6.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 85, category: "Adventure", provider: "microgaming"
+  },
+  "Abundant Birds": {
+    id: 307, name: "Abundant Birds", image: "/images/microgaming/7.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 84, category: "Animal", provider: "microgaming"
+  },
+  "Extreme Gold Blitz": {
+    id: 308, name: "Extreme Gold Blitz", image: "/images/microgaming/8.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 90, category: "Gold", provider: "microgaming"
+  },
+  "Bronco Big Bounty": {
+    id: 309, name: "Bronco Big Bounty", image: "/images/microgaming/9.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 87, category: "Western", provider: "microgaming"
+  },
+  "Blessing of Prosperity": {
+    id: 310, name: "Blessing of Prosperity", image: "/images/microgaming/10.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 88, category: "Asian", provider: "microgaming"
+  },
+  "Bass Capture Super Up": {
+    id: 311, name: "Bass Capture Super Up", image: "/images/microgaming/11.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 86, category: "Fishing", provider: "microgaming"
+  },
+  "Carnival Party": {
+    id: 312, name: "Carnival Party", image: "/images/microgaming/12.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 85, category: "Party", provider: "microgaming"
+  },
+  "Sweet Pot Combo": {
+    id: 313, name: "Sweet Pot Combo", image: "/images/microgaming/13.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 87, category: "Candy", provider: "microgaming"
+  },
+  "Ice Joker": {
+    id: 314, name: "Ice Joker", image: "/images/microgaming/14.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 84, category: "Classic", provider: "microgaming"
+  },
+  "Golden Dice": {
+    id: 315, name: "Golden Dice", image: "/images/microgaming/15.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 83, category: "Classic", provider: "microgaming"
+  },
+  "Diamond Diva Pig": {
+    id: 316, name: "Diamond Diva Pig", image: "/images/microgaming/16.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 86, category: "Animal", provider: "microgaming"
+  },
+  "Money on the Reels": {
+    id: 317, name: "Money on the Reels", image: "/images/microgaming/17.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 88, category: "Money", provider: "microgaming"
+  },
+  "Sweet Wild Rush 2": {
+    id: 318, name: "Sweet Wild Rush 2", image: "/images/microgaming/18.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 89, category: "Candy", provider: "microgaming"
+  },
+  "Frenetic Joker Explosion": {
+    id: 319, name: "Frenetic Joker Explosion", image: "/images/microgaming/19.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 87, category: "Classic", provider: "microgaming"
+  },
+  "Night Chicken Fever": {
+    id: 320, name: "Night Chicken Fever", image: "/images/microgaming/20.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 85, category: "Animal", provider: "microgaming"
+  },
+  "Fire and Roses Joker": {
+    id: 321, name: "Fire and Roses Joker", image: "/images/microgaming/21.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 86, category: "Classic", provider: "microgaming"
+  },
+  "Fishin' Bigger Pots of Gold™": {
+    id: 322, name: "Fishin' Bigger Pots of Gold™", image: "/images/microgaming/22.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 88, category: "Fishing", provider: "microgaming"
+  },
+  "FlyX": {
+    id: 323, name: "FlyX", image: "/images/microgaming/23.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 90, category: "Crash", provider: "microgaming"
+  },
+  "Asgardian Fire": {
+    id: 324, name: "Asgardian Fire", image: "/images/microgaming/24.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 89, category: "Norse", provider: "microgaming"
+  },
+  "Golden Cat Fortunes": {
+    id: 325, name: "Golden Cat Fortunes", image: "/images/microgaming/25.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 87, category: "Asian", provider: "microgaming"
+  },
+  "Treasure Gems": {
+    id: 326, name: "Treasure Gems", image: "/images/microgaming/26.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 85, category: "Gems", provider: "microgaming"
+  },
+  "Hatching Gold! Rooster's Riches": {
+    id: 327, name: "Hatching Gold! Rooster's Riches", image: "/images/microgaming/27.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 86, category: "Animal", provider: "microgaming"
+  },
+  "Poseidon's Mighty Empire": {
+    id: 328, name: "Poseidon's Mighty Empire", image: "/images/microgaming/28.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 91, category: "Greek", provider: "microgaming"
+  },
+  "Diamond Inferno": {
+    id: 329, name: "Diamond Inferno", image: "/images/microgaming/29.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 88, category: "Gems", provider: "microgaming"
+  },
+  "Lucky Twins Jackpot": {
+    id: 330, name: "Lucky Twins Jackpot", image: "/images/microgaming/30.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 87, category: "Asian", provider: "microgaming"
+  },
+  "Sugar Mania 8000": {
+    id: 331, name: "Sugar Mania 8000", image: "/images/microgaming/31.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 92, category: "Candy", provider: "microgaming"
+  },
+  "Monkey Bonanza": {
+    id: 332, name: "Monkey Bonanza", image: "/images/microgaming/32.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 86, category: "Animal", provider: "microgaming"
+  },
+  "Solid Gold": {
+    id: 333, name: "Solid Gold", image: "/images/microgaming/33.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 85, category: "Gold", provider: "microgaming"
+  },
+  "Wild Treasure Stacks": {
+    id: 334, name: "Wild Treasure Stacks", image: "/images/microgaming/34.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 87, category: "Adventure", provider: "microgaming"
+  },
+  "Queen of Alexandria™": {
+    id: 335, name: "Queen of Alexandria™", image: "/images/microgaming/35.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 89, category: "Egyptian", provider: "microgaming"
+  },
+  "Reign of Fire": {
+    id: 336, name: "Reign of Fire", image: "/images/microgaming/36.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 88, category: "Dragon", provider: "microgaming"
+  },
+  "Extreme Money Lightning": {
+    id: 337, name: "Extreme Money Lightning", image: "/images/microgaming/37.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 90, category: "Money", provider: "microgaming"
+  },
+  "Locked Riches of the Mummy": {
+    id: 338, name: "Locked Riches of the Mummy", image: "/images/microgaming/38.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 87, category: "Egyptian", provider: "microgaming"
+  },
+  "Dragon Rhythm Link&Win": {
+    id: 339, name: "Dragon Rhythm Link&Win", image: "/images/microgaming/39.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 88, category: "Dragon", provider: "microgaming"
+  },
+  "Moonlight Romance – Awakening": {
+    id: 340, name: "Moonlight Romance – Awakening", image: "/images/microgaming/40.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 86, category: "Fantasy", provider: "microgaming"
+  },
+  "African Wilds": {
+    id: 341, name: "African Wilds", image: "/images/microgaming/41.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 85, category: "Adventure", provider: "microgaming"
+  },
+  "Sweet Jar Christmas Combo": {
+    id: 342, name: "Sweet Jar Christmas Combo", image: "/images/microgaming/42.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 84, category: "Holiday", provider: "microgaming"
+  },
+  "Stellar Treasure 7 Wilds": {
+    id: 343, name: "Stellar Treasure 7 Wilds", image: "/images/microgaming/43.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 87, category: "Space", provider: "microgaming"
+  },
+  "Tiger Treasures": {
+    id: 344, name: "Tiger Treasures", image: "/images/microgaming/44.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 88, category: "Asian", provider: "microgaming"
+  },
+  "Lost Treasures of Hades": {
+    id: 345, name: "Lost Treasures of Hades", image: "/images/microgaming/45.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 90, category: "Greek", provider: "microgaming"
+  },
+  "Joker Loko Multiplier Trail": {
+    id: 346, name: "Joker Loko Multiplier Trail", image: "/images/microgaming/46.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 86, category: "Classic", provider: "microgaming"
+  },
+  "3 Aztec Riches Power Combo": {
+    id: 347, name: "3 Aztec Riches Power Combo", image: "/images/microgaming/47.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 88, category: "Adventure", provider: "microgaming"
+  },
+  "Bears Make Bank! Power Combo": {
+    id: 348, name: "Bears Make Bank! Power Combo", image: "/images/microgaming/48.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 87, category: "Animal", provider: "microgaming"
+  },
+  "Go! Fishing Fortune Reels": {
+    id: 349, name: "Go! Fishing Fortune Reels", image: "/images/microgaming/49.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 86, category: "Fishing", provider: "microgaming"
+  }
+};
+
+// ═══════════════════════════════════════════════════════════════════════════════
 // PLATAFORMAS ANTIGAS (YG, DG, MG, EG, HG, FG) - SEM ALTERAÇÃO
 // ═══════════════════════════════════════════════════════════════════════════════
 
