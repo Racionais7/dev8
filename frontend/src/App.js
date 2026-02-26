@@ -50,10 +50,12 @@ function App() {
   // Atualização dinâmica dos valores
   useEffect(() => {
     const interval = setInterval(() => {
-      // Accuracy varia ±0.2% (realista)
+      // Accuracy varia entre 80% e 99% (realista)
       setAccuracy(prev => {
-        const change = (Math.random() - 0.5) * 0.4;
-        return Math.min(92, Math.max(86, parseFloat((prev + change).toFixed(1))));
+        const change = (Math.random() - 0.5) * 1.5; // Variação de ±0.75%
+        const newValue = prev + change;
+        // Mantém entre 80 e 99
+        return parseFloat(Math.min(99, Math.max(80, newValue)).toFixed(1));
       });
       
       // Online users varia ±5 (realista)
