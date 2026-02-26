@@ -111,27 +111,23 @@ const ProviderLogos = {
 };
 
 const ProviderSelector = ({ selectedProvider, onProviderChange, selectedPlatform }) => {
-  // Platforms with NEW providers (AG, BG, WG)
-  const newPlatforms = ['WGJOGO', 'AGJOGO', 'BGJOGO'];
-  const isNewPlatform = newPlatforms.includes(selectedPlatform);
+  // Platforms with NEW providers (AG, BG, WG) - only these have PP, Amigo, etc
+  const newProviderPlatforms = ['WGJOGO', 'AGJOGO', 'BGJOGO'];
+  const isNewProviderPlatform = newProviderPlatforms.includes(selectedPlatform);
   
   // Get providers list based on platform
-  const providerList = isNewPlatform 
+  const providerList = isNewProviderPlatform 
     ? providersByPlatform[selectedPlatform] || providersByPlatform.DEFAULT
     : providersByPlatform.DEFAULT;
   
-  // Get slots data based on platform
-  const platformSlots = isNewPlatform 
-    ? slotsDataByPlatform[selectedPlatform] || {}
-    : slotsData;
+  // Get slots data based on platform - ALL platforms use slotsDataByPlatform
+  const platformSlots = slotsDataByPlatform[selectedPlatform] || slotsData;
   
   // Map providers with game availability
   const providers = providerList.map(p => ({
     id: p.id,
     name: p.name,
-    hasGames: isNewPlatform 
-      ? (platformSlots[p.id]?.length || 0) > 0
-      : (slotsData[p.id]?.length || 0) > 0
+    hasGames: (platformSlots[p.id]?.length || 0) > 0
   }));
 
   return (
