@@ -3,14 +3,14 @@
 // NUNCA alterar a sequência - apenas pular jogos que não existem
 
 export const providers = {
-  pg: "PG Soft",
-  pragmatic: "Pragmatic Play",
-  spirit: "Spirit Gaming",
-  tada: "Tada Gaming",
-  revenge: "Revenge"
+  pg: "PG",
+  pp: "PP",
+  amigo: "Amigo Gaming",
+  microgaming: "Micro Gaming",
+  fachai: "FA CHAI Gaming"
 };
 
-// Links de cadastro por plataforma - FG JOGO
+// Links de cadastro por plataforma
 export const platformLinks = {
   MGJOGO: "http://mgjogo3.com/?ch=380001#/register",
   EGJOGO: "http://egjogo6.com/?ch=420001#/register",
@@ -23,15 +23,307 @@ export const platformLinks = {
   BGJOGO: "http://bot.bgjogo.com/"
 };
 
-// Imagem da plataforma FG JOGO
+// Imagem da plataforma
 export const platformImage = "/assets/slots/platform-main.jpeg";
 
 // ═══════════════════════════════════════════════════════════════════════════════
-// ORDENAÇÃO MANUAL FIXA - NÃO ALTERAR A SEQUÊNCIA
-// Se um jogo não existir, pular mas NUNCA mudar a ordem dos restantes
+// PLATAFORMAS COM JOGOS ATUALIZADOS: AG, BG, WG
+// Fabricantes: PG, PP, Amigo Gaming, Micro Gaming, FA CHAI Gaming
 // ═══════════════════════════════════════════════════════════════════════════════
 
-// PG SOFT - Ordem estratégica fixa (22 jogos)
+// PG SOFT - Novo ranking de 28 jogos para AG, BG, WG
+const PG_NEW_ORDER = [
+  "Fortune Tiger",
+  "Fortune Rabbit",
+  "Fortune Ox",
+  "Dragão da Fortuna",
+  "Pinata Wins",
+  "Cobra da Fortuna",
+  "Midas Fortune",
+  "Wild Bounty Showdown",
+  "Fortune Mouse",
+  "Cash Mania",
+  "Missão do Tesouro do Dragão",
+  "Wild Bandito",
+  "Wild Ape#3258",
+  "Anubis Wrath",
+  "Chicky Run",
+  "Ganesha Gold",
+  "Império Majestoso",
+  "Dupla Fortuna",
+  "Werewolf's Hunt",
+  "Dragon Hatch",
+  "Lucky Neko",
+  "Treasures of Aztec",
+  "Genie's 3 Wishes",
+  "Frenesi do Ouro do Kraken",
+  "Recompensa dos Grimm Hansel e Gretel",
+  "Futebol Fever",
+  "The Great Icescape",
+  "Cocktail Nights"
+];
+
+// PG SOFT GAMES - Novo ranking para AG, BG, WG (28 jogos)
+const pgNewGamesData = {
+  "Fortune Tiger": {
+    id: 1,
+    name: "Fortune Tiger",
+    image: "/images/pg-new/Fortune Tiger.png",
+    bets: ["R$ 0,80", "R$ 1,20", "R$ 4,80"],
+    basePayout: 77,
+    category: "Fortune",
+    provider: "pg"
+  },
+  "Fortune Rabbit": {
+    id: 2,
+    name: "Fortune Rabbit",
+    image: "/images/pg-new/Fortune Rabbit.png",
+    bets: ["R$ 0,50", "R$ 1,50", "R$ 2,50"],
+    basePayout: 85,
+    category: "Fortune",
+    provider: "pg"
+  },
+  "Fortune Ox": {
+    id: 3,
+    name: "Fortune Ox",
+    image: "/images/pg-new/Fortune Ox.png",
+    bets: ["R$ 0,50", "R$ 1,50", "R$ 2,50"],
+    basePayout: 82,
+    category: "Fortune",
+    provider: "pg"
+  },
+  "Dragão da Fortuna": {
+    id: 4,
+    name: "Dragão da Fortuna",
+    image: "/images/pg-new/Dragão da Fortuna.png",
+    bets: ["R$ 0,50", "R$ 3,50", "R$ 4,00"],
+    basePayout: 88,
+    category: "Fortune",
+    provider: "pg"
+  },
+  "Pinata Wins": {
+    id: 5,
+    name: "Pinata Wins",
+    image: "/images/pg-new/Pinata Wins.png",
+    bets: ["R$ 0,50", "R$ 3,50", "R$ 4,00"],
+    basePayout: 86,
+    category: "Party",
+    provider: "pg"
+  },
+  "Cobra da Fortuna": {
+    id: 6,
+    name: "Cobra da Fortuna",
+    image: "/images/pg-new/Cobra da Fortuna.png",
+    bets: ["R$ 0,40", "R$ 3,60", "R$ 4,00"],
+    basePayout: 85,
+    category: "Fortune",
+    provider: "pg"
+  },
+  "Midas Fortune": {
+    id: 7,
+    name: "Midas Fortune",
+    image: "/images/pg-new/Midas Fortune.png",
+    bets: ["R$ 0,50", "R$ 2,50", "R$ 4,00"],
+    basePayout: 86,
+    category: "Mythical",
+    provider: "pg"
+  },
+  "Wild Bounty Showdown": {
+    id: 8,
+    name: "Wild Bounty Showdown",
+    image: "/images/pg-new/Wild Bounty Showdown.png",
+    bets: ["R$ 0,40", "R$ 2,00", "R$ 4,00"],
+    basePayout: 88,
+    category: "Western",
+    provider: "pg"
+  },
+  "Fortune Mouse": {
+    id: 9,
+    name: "Fortune Mouse",
+    image: "/images/pg-new/Fortune Mouse.png",
+    bets: ["R$ 0,50", "R$ 3,50", "R$ 4,00"],
+    basePayout: 87,
+    category: "Fortune",
+    provider: "pg"
+  },
+  "Cash Mania": {
+    id: 10,
+    name: "Cash Mania",
+    image: "/images/pg-new/Cash Mania.png",
+    bets: ["R$ 0,50", "R$ 3,50", "R$ 4,00"],
+    basePayout: 83,
+    category: "Money",
+    provider: "pg"
+  },
+  "Missão do Tesouro do Dragão": {
+    id: 11,
+    name: "Missão do Tesouro do Dragão",
+    image: "/images/pg-new/Missão do Tesouro do Dragão.png",
+    bets: ["R$ 0,50", "R$ 2,50", "R$ 4,00"],
+    basePayout: 89,
+    category: "Dragon",
+    provider: "pg"
+  },
+  "Wild Bandito": {
+    id: 12,
+    name: "Wild Bandito",
+    image: "/images/pg-new/Wild Bandito.png",
+    bets: ["R$ 0,40", "R$ 3,60", "R$ 4,00"],
+    basePayout: 77,
+    category: "Western",
+    provider: "pg"
+  },
+  "Wild Ape#3258": {
+    id: 13,
+    name: "Wild Ape#3258",
+    image: "/images/pg-new/Wild Ape#3258.png",
+    bets: ["R$ 0,50", "R$ 2,00", "R$ 4,00"],
+    basePayout: 84,
+    category: "Animal",
+    provider: "pg"
+  },
+  "Anubis Wrath": {
+    id: 14,
+    name: "Anubis Wrath",
+    image: "/images/pg-new/Anubis Wrath.png",
+    bets: ["R$ 0,50", "R$ 2,50", "R$ 4,00"],
+    basePayout: 87,
+    category: "Egyptian",
+    provider: "pg"
+  },
+  "Chicky Run": {
+    id: 15,
+    name: "Chicky Run",
+    image: "/images/pg-new/Chicky Run.png",
+    bets: ["R$ 0,50", "R$ 2,00", "R$ 4,00"],
+    basePayout: 82,
+    category: "Animal",
+    provider: "pg"
+  },
+  "Ganesha Gold": {
+    id: 16,
+    name: "Ganesha Gold",
+    image: "/images/pg-new/Ganesha Gold.png",
+    bets: ["R$ 0,40", "R$ 3,60", "R$ 4,00"],
+    basePayout: 85,
+    category: "Hindu",
+    provider: "pg"
+  },
+  "Império Majestoso": {
+    id: 17,
+    name: "Império Majestoso",
+    image: "/images/pg-new/Império Majestoso.png",
+    bets: ["R$ 0,50", "R$ 3,00", "R$ 4,00"],
+    basePayout: 86,
+    category: "Kingdom",
+    provider: "pg"
+  },
+  "Dupla Fortuna": {
+    id: 18,
+    name: "Dupla Fortuna",
+    image: "/images/pg-new/Dupla Fortuna.png",
+    bets: ["R$ 0,50", "R$ 1,50", "R$ 3,00"],
+    basePayout: 84,
+    category: "Fortune",
+    provider: "pg"
+  },
+  "Werewolf's Hunt": {
+    id: 19,
+    name: "Werewolf's Hunt",
+    image: "/images/pg-new/Werewolf's Hunt.png",
+    bets: ["R$ 0,50", "R$ 2,50", "R$ 4,00"],
+    basePayout: 88,
+    category: "Horror",
+    provider: "pg"
+  },
+  "Dragon Hatch": {
+    id: 20,
+    name: "Dragon Hatch",
+    image: "/images/pg-new/Dragon Hatch.png",
+    bets: ["R$ 0,50", "R$ 1,50", "R$ 2,50"],
+    basePayout: 88,
+    category: "Dragon",
+    provider: "pg"
+  },
+  "Lucky Neko": {
+    id: 21,
+    name: "Lucky Neko",
+    image: "/images/pg-new/Lucky Neko.png",
+    bets: ["R$ 0,80", "R$ 1,20", "R$ 2,40"],
+    basePayout: 79,
+    category: "Asian",
+    provider: "pg"
+  },
+  "Treasures of Aztec": {
+    id: 22,
+    name: "Treasures of Aztec",
+    image: "/images/pg-new/Treasures of Aztec.png",
+    bets: ["R$ 0,50", "R$ 2,00", "R$ 4,00"],
+    basePayout: 87,
+    category: "Adventure",
+    provider: "pg"
+  },
+  "Genie's 3 Wishes": {
+    id: 23,
+    name: "Genie's 3 Wishes",
+    image: "/images/pg-new/Genie's 3 Wishes.png",
+    bets: ["R$ 0,50", "R$ 2,50", "R$ 4,00"],
+    basePayout: 85,
+    category: "Fantasy",
+    provider: "pg"
+  },
+  "Frenesi do Ouro do Kraken": {
+    id: 24,
+    name: "Frenesi do Ouro do Kraken",
+    image: "/images/pg-new/Frenesi do Ouro do Kraken.png",
+    bets: ["R$ 0,50", "R$ 3,00", "R$ 4,00"],
+    basePayout: 86,
+    category: "Sea",
+    provider: "pg"
+  },
+  "Recompensa dos Grimm Hansel e Gretel": {
+    id: 25,
+    name: "Recompensa dos Grimm Hansel e Gretel",
+    image: "/images/pg-new/Recompensa dos Grimm Hansel e Gretel.png",
+    bets: ["R$ 0,50", "R$ 2,00", "R$ 4,00"],
+    basePayout: 84,
+    category: "Fantasy",
+    provider: "pg"
+  },
+  "Futebol Fever": {
+    id: 26,
+    name: "Futebol Fever",
+    image: "/images/pg-new/Futebol Fever.png",
+    bets: ["R$ 0,50", "R$ 2,50", "R$ 4,00"],
+    basePayout: 83,
+    category: "Sports",
+    provider: "pg"
+  },
+  "The Great Icescape": {
+    id: 27,
+    name: "The Great Icescape",
+    image: "/images/pg-new/The Great Icescape.png",
+    bets: ["R$ 0,50", "R$ 2,00", "R$ 4,00"],
+    basePayout: 85,
+    category: "Adventure",
+    provider: "pg"
+  },
+  "Cocktail Nights": {
+    id: 28,
+    name: "Cocktail Nights",
+    image: "/images/pg-new/Cocktail Nights.png",
+    bets: ["R$ 0,50", "R$ 2,00", "R$ 4,00"],
+    basePayout: 83,
+    category: "Party",
+    provider: "pg"
+  }
+};
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// PLATAFORMAS ANTIGAS (YG, DG, MG, EG, HG, FG) - SEM ALTERAÇÃO
+// ═══════════════════════════════════════════════════════════════════════════════
+
+// PG SOFT antigo - Ordem estratégica fixa (22 jogos)
 const PG_SOFT_ORDER = [
   "Fortune Tiger",
   "Fortune Rabbit", 
@@ -138,10 +430,10 @@ const SPIRIT_ORDER = [
 ];
 
 // ═══════════════════════════════════════════════════════════════════════════════
-// DADOS DOS JOGOS (com todas as informações)
+// DADOS DOS JOGOS ANTIGOS (para YG, DG, MG, EG, HG, FG)
 // ═══════════════════════════════════════════════════════════════════════════════
 
-// PG SOFT GAMES - Dados completos (22 jogos com imagens corretas)
+// PG SOFT GAMES antigos
 const pgGamesData = {
   "Fortune Tiger": {
     id: 1,
@@ -343,7 +635,7 @@ const pgGamesData = {
   }
 };
 
-// PRAGMATIC PLAY GAMES - Dados completos
+// PRAGMATIC PLAY GAMES
 const pragmaticGamesData = {
   "Gates of Olympus": {
     id: 16,
@@ -412,69 +704,6 @@ const pragmaticGamesData = {
     id: 14,
     name: "Starlight Princess",
     image: "/images/pp/Starlight Princess.jpg",
-    bets: ["R$ 0,20", "R$ 0,40", "R$ 1,00"],
-    basePayout: 94,
-    category: "Fantasy",
-    provider: "pragmatic"
-  },
-  "Wild West Duels": {
-    id: 11,
-    name: "Wild West Duels",
-    image: "/assets/slots/wild-west-duels.jpg",
-    bets: ["R$ 0,20", "R$ 0,40", "R$ 1,00"],
-    basePayout: 89,
-    category: "Western",
-    provider: "pragmatic"
-  },
-  "The Dog House": {
-    id: 12,
-    name: "The Dog House",
-    image: "/assets/slots/sweet-bonanza.jpg",
-    bets: ["R$ 0,20", "R$ 0,40", "R$ 1,00"],
-    basePayout: 88,
-    category: "Animal",
-    provider: "pragmatic"
-  },
-  "Wolf Gold": {
-    id: 13,
-    name: "Wolf Gold",
-    image: "/assets/slots/wolf-gold.jpg",
-    bets: ["R$ 0,25", "R$ 0,50", "R$ 1,00"],
-    basePayout: 90,
-    category: "Animal",
-    provider: "pragmatic"
-  },
-  "Fruit Party": {
-    id: 24,
-    name: "Fruit Party",
-    image: "/assets/slots/big-bass.jpg",
-    bets: ["R$ 0,20", "R$ 0,40", "R$ 1,00"],
-    basePayout: 86,
-    category: "Fruit",
-    provider: "pragmatic"
-  },
-  "Madame Destiny Megaways": {
-    id: 26,
-    name: "Madame Destiny Megaways",
-    image: "/assets/slots/triple-jokers.jpg",
-    bets: ["R$ 0,20", "R$ 0,40", "R$ 1,00"],
-    basePayout: 87,
-    category: "Fortune",
-    provider: "pragmatic"
-  },
-  "O Vira-Lata Caramelo": {
-    id: 35,
-    name: "O Vira-Lata Caramelo",
-    image: "/images/pp/O Vira-Lata Caramelo.jpg",
-    bets: ["R$ 0,20", "R$ 0,40", "R$ 1,00"],
-    basePayout: 89,
-    category: "Animal",
-    provider: "pragmatic"
-  },
-  "Fire Portals": {
-    id: 36,
-    name: "Fire Portals",
-    image: "/images/pp/Fire Portals.jpg",
     bets: ["R$ 0,20", "R$ 0,40", "R$ 1,00"],
     basePayout: 94,
     category: "Fantasy",
@@ -1055,15 +1284,12 @@ const spiritGamesData = {
 function getOrderedGames(orderList, gamesData) {
   const orderedGames = [];
   
-  // Percorrer a lista de ordem fixa
   for (const gameName of orderList) {
     if (gamesData[gameName]) {
       orderedGames.push(gamesData[gameName]);
     }
-    // Se o jogo não existir, simplesmente pula (não altera a sequência)
   }
   
-  // Adicionar jogos extras que não estão na lista de ordem (no final)
   for (const gameName of Object.keys(gamesData)) {
     if (!orderList.includes(gameName)) {
       orderedGames.push(gamesData[gameName]);
@@ -1074,18 +1300,96 @@ function getOrderedGames(orderList, gamesData) {
 }
 
 // ═══════════════════════════════════════════════════════════════════════════════
-// EXPORTAR DADOS ORDENADOS
+// EXPORTAR DADOS ORDENADOS POR PLATAFORMA
 // ═══════════════════════════════════════════════════════════════════════════════
 
-export const slotsData = {
+// Jogos para AG, BG, WG (novo ranking com PG)
+const newPlatformGames = getOrderedGames(PG_NEW_ORDER, pgNewGamesData);
+
+// Jogos para YG, DG, MG, EG, HG, FG (antigos - sem alteração)
+const oldPlatformGames = {
   pg: getOrderedGames(PG_SOFT_ORDER, pgGamesData),
   pragmatic: getOrderedGames(PRAGMATIC_ORDER, pragmaticGamesData),
   spirit: getOrderedGames(SPIRIT_ORDER, spiritGamesData),
-  tada: getOrderedGames(TADA_ORDER, tadaGamesData),
-  revenge: [] // Em breve
+  tada: getOrderedGames(TADA_ORDER, tadaGamesData)
 };
 
-// Provider ranking priority (ordem de exibição)
+// Dados exportados por plataforma
+export const slotsDataByPlatform = {
+  // Plataformas com NOVO ranking (AG, BG, WG)
+  AGJOGO: {
+    pg: newPlatformGames,
+    pp: [], // PP será adicionado depois
+    amigo: [], // Amigo Gaming será adicionado depois
+    microgaming: [], // Micro Gaming será adicionado depois
+    fachai: [] // FA CHAI Gaming será adicionado depois
+  },
+  BGJOGO: {
+    pg: newPlatformGames,
+    pp: [],
+    amigo: [],
+    microgaming: [],
+    fachai: []
+  },
+  WGJOGO: {
+    pg: newPlatformGames,
+    pp: [],
+    amigo: [],
+    microgaming: [],
+    fachai: []
+  },
+  // Plataformas com ranking ANTIGO (YG, DG, MG, EG, HG, FG)
+  YGJOGO: oldPlatformGames,
+  DGJOGO: oldPlatformGames,
+  MGJOGO: oldPlatformGames,
+  EGJOGO: oldPlatformGames,
+  HGJOGO: oldPlatformGames,
+  FGJOGO: oldPlatformGames
+};
+
+// Export padrão para compatibilidade (usa jogos antigos)
+export const slotsData = {
+  pg: oldPlatformGames.pg,
+  pragmatic: oldPlatformGames.pragmatic,
+  spirit: oldPlatformGames.spirit,
+  tada: oldPlatformGames.tada,
+  revenge: []
+};
+
+// Provider ranking por plataforma
+export const providersByPlatform = {
+  // AG, BG, WG têm novos providers
+  AGJOGO: [
+    { id: 'pg', name: 'PG', rank: 1 },
+    { id: 'pp', name: 'PP', rank: 2 },
+    { id: 'amigo', name: 'Amigo Gaming', rank: 3 },
+    { id: 'microgaming', name: 'Micro Gaming', rank: 4 },
+    { id: 'fachai', name: 'FA CHAI Gaming', rank: 5 }
+  ],
+  BGJOGO: [
+    { id: 'pg', name: 'PG', rank: 1 },
+    { id: 'pp', name: 'PP', rank: 2 },
+    { id: 'amigo', name: 'Amigo Gaming', rank: 3 },
+    { id: 'microgaming', name: 'Micro Gaming', rank: 4 },
+    { id: 'fachai', name: 'FA CHAI Gaming', rank: 5 }
+  ],
+  WGJOGO: [
+    { id: 'pg', name: 'PG', rank: 1 },
+    { id: 'pp', name: 'PP', rank: 2 },
+    { id: 'amigo', name: 'Amigo Gaming', rank: 3 },
+    { id: 'microgaming', name: 'Micro Gaming', rank: 4 },
+    { id: 'fachai', name: 'FA CHAI Gaming', rank: 5 }
+  ],
+  // Outras plataformas mantêm providers antigos
+  DEFAULT: [
+    { id: 'pg', name: 'PG Soft', rank: 1 },
+    { id: 'pragmatic', name: 'Pragmatic Play', rank: 2 },
+    { id: 'tada', name: 'Tada Gaming', rank: 3 },
+    { id: 'spirit', name: 'Spirit Gaming', rank: 4 }
+  ]
+};
+
+// Provider ranking priority (ordem de exibição) - padrão
 export const providerRankingOrder = [
   { id: 'pg', name: 'PG Soft', rank: 1 },
   { id: 'pragmatic', name: 'Pragmatic Play', rank: 2 },
@@ -1096,31 +1400,24 @@ export const providerRankingOrder = [
 
 // Função para gerar payout dinâmico
 export const generateDynamicPayout = (basePayout) => {
-  const variation = Math.random() * 42 + 55; // 55% a 97%
+  const variation = Math.random() * 42 + 55;
   return Math.round(variation);
 };
 
 // Função para gerar sinal do slot
 export const generateSignal = (slot) => {
-  // Pegar horário atual local da pessoa
   const now = new Date();
+  const signalTime = new Date(now.getTime() + 3 * 60000);
+  const endTime = new Date(signalTime.getTime() + 5 * 60000);
   
-  // Gerar janela EXATAMENTE 3 MINUTOS depois de gerar o sinal
-  const signalTime = new Date(now.getTime() + 3 * 60000); // Exatos 3 minutos
-  
-  // Janela dura APENAS 5 MINUTOS (não 15)
-  const endTime = new Date(signalTime.getTime() + 5 * 60000); // 5 minutos de duração
-  
-  // Escolher aposta aleatória entre as 3 disponíveis
   const randomBetIndex = Math.floor(Math.random() * slot.bets.length);
   const selectedBet = slot.bets[randomBetIndex];
   
   const modes = ['Normal', 'Turbo'];
   const selectedMode = modes[Math.floor(Math.random() * modes.length)];
   
-  // Calcular confiança baseada no RTP base do slot
   const baseConfidence = slot.basePayout;
-  const confidenceVariation = Math.random() * 20 - 10; // -10 a +10
+  const confidenceVariation = Math.random() * 20 - 10;
   const confidence = Math.max(60, Math.min(99, baseConfidence + confidenceVariation));
 
   return {
@@ -1149,7 +1446,7 @@ export const generateSignal = (slot) => {
 // Função para verificar cooldown (10 minutos)
 export const checkCooldown = (lastGenerationTime) => {
   const now = Date.now();
-  const cooldownTime = 10 * 60 * 1000; // 10 minutos em ms
+  const cooldownTime = 10 * 60 * 1000;
   const timePassed = now - lastGenerationTime;
   
   if (timePassed >= cooldownTime) {
