@@ -79,7 +79,11 @@ const ProviderLogos = {
     <span className="text-sm font-bold text-white tracking-wide">PP</span>
   ),
   amigo: () => (
-    <span className="text-xs font-bold text-white">Amigo Gaming</span>
+    <img 
+      src="/assets/providers/amigo.png" 
+      alt="Amigo Gaming" 
+      className="h-6 w-auto object-contain"
+    />
   ),
   microgaming: () => (
     <span className="text-xs font-bold text-white">Micro Gaming</span>
