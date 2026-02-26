@@ -1316,13 +1316,13 @@ const oldPlatformGames = {
 
 // Dados exportados por plataforma
 export const slotsDataByPlatform = {
-  // Plataformas com NOVO ranking (AG, BG, WG)
+  // TODAS as plataformas usam o novo ranking PG
   AGJOGO: {
     pg: newPlatformGames,
-    pp: [], // PP será adicionado depois
-    amigo: [], // Amigo Gaming será adicionado depois
-    microgaming: [], // Micro Gaming será adicionado depois
-    fachai: [] // FA CHAI Gaming será adicionado depois
+    pp: [],
+    amigo: [],
+    microgaming: [],
+    fachai: []
   },
   BGJOGO: {
     pg: newPlatformGames,
@@ -1338,13 +1338,43 @@ export const slotsDataByPlatform = {
     microgaming: [],
     fachai: []
   },
-  // Plataformas com ranking ANTIGO (YG, DG, MG, EG, HG, FG)
-  YGJOGO: oldPlatformGames,
-  DGJOGO: oldPlatformGames,
-  MGJOGO: oldPlatformGames,
-  EGJOGO: oldPlatformGames,
-  HGJOGO: oldPlatformGames,
-  FGJOGO: oldPlatformGames
+  // YG, DG, MG, EG, HG, FG também usam os novos jogos PG
+  YGJOGO: {
+    pg: newPlatformGames,
+    pragmatic: oldPlatformGames.pragmatic,
+    spirit: oldPlatformGames.spirit,
+    tada: oldPlatformGames.tada
+  },
+  DGJOGO: {
+    pg: newPlatformGames,
+    pragmatic: oldPlatformGames.pragmatic,
+    spirit: oldPlatformGames.spirit,
+    tada: oldPlatformGames.tada
+  },
+  MGJOGO: {
+    pg: newPlatformGames,
+    pragmatic: oldPlatformGames.pragmatic,
+    spirit: oldPlatformGames.spirit,
+    tada: oldPlatformGames.tada
+  },
+  EGJOGO: {
+    pg: newPlatformGames,
+    pragmatic: oldPlatformGames.pragmatic,
+    spirit: oldPlatformGames.spirit,
+    tada: oldPlatformGames.tada
+  },
+  HGJOGO: {
+    pg: newPlatformGames,
+    pragmatic: oldPlatformGames.pragmatic,
+    spirit: oldPlatformGames.spirit,
+    tada: oldPlatformGames.tada
+  },
+  FGJOGO: {
+    pg: newPlatformGames,
+    pragmatic: oldPlatformGames.pragmatic,
+    spirit: oldPlatformGames.spirit,
+    tada: oldPlatformGames.tada
+  }
 };
 
 // Export padrão para compatibilidade (usa jogos antigos)
