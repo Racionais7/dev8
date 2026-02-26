@@ -18,6 +18,21 @@ html, body {
   overflow-x: hidden;
 }
 
+/* High Quality Image Rendering */
+img {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+/* Slot images - extra crisp */
+img[alt*="slot"], img[alt*="Slot"], img[src*="/images/"] {
+  image-rendering: auto;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
 /* App container */
 .App {
   min-height: 100vh;
