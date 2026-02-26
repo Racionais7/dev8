@@ -1,5 +1,5 @@
 import React from 'react';
-import { slotsData, providerRankingOrder } from '../data/mockData';
+import { slotsData, slotsDataByPlatform, providerRankingOrder, providersByPlatform } from '../data/mockData';
 
 // PG Soft Logo Component - Pixel art style (monochrome for dark mode)
 const PGSoftLogo = ({ className = "h-5" }) => (
