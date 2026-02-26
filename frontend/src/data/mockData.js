@@ -1306,6 +1306,266 @@ const microgamingGamesData = {
 };
 
 // ═══════════════════════════════════════════════════════════════════════════════
+// FA CHAI GAMING - 50 jogos APENAS para AG, BG, WG
+// ═══════════════════════════════════════════════════════════════════════════════
+
+const FACHAI_ORDER = [
+  "Fortune Sheep 3x3",
+  "Roma Gladiatrix",
+  "Tomb Secrets",
+  "Poker Win",
+  "Jungle Bang Bang",
+  "Sugar Bang Bang 2",
+  "Buffalo Ways",
+  "King's Sword",
+  "Phoenix Fever",
+  "Goddess of Fortune",
+  "Odin's Treasures",
+  "Chihuahua",
+  "Koi Jumping for Gold",
+  "Three Little Pigs",
+  "Poker Win 2",
+  "Egyptian Bonanza",
+  "Candy Burst",
+  "Boxing Riches",
+  "Lucky Cat",
+  "Inca Queen",
+  "Treasure Quest",
+  "New Year's Eve 2",
+  "Fortune Dragon",
+  "Cyber Fortune God",
+  "Fusion Magic",
+  "Lucky Fortunes 3x3",
+  "Chinese New Year Moreways",
+  "Money Machine Catla",
+  "Legend of Inca",
+  "Zeus",
+  "Magic Lamp",
+  "Giant Sea Treasure Hunt",
+  "Sugar Bang Bang Plus",
+  "Night Market 2",
+  "Crazy Bison",
+  "Golden Lucky Egg",
+  "Super Elements",
+  "Rich Tycoon",
+  "Lucky Fortunes",
+  "Click to Send",
+  "Gladiators",
+  "Circus Coin Pusher",
+  "Treasure Hunt",
+  "Mines",
+  "Magic Beans",
+  "DJ Boom Boom",
+  "Night Market",
+  "Fortune Muscle Cat",
+  "Robin Hood",
+  "New Year's Eve"
+];
+
+const fachaiGamesData = {
+  "Fortune Sheep 3x3": {
+    id: 401, name: "Fortune Sheep 3x3", image: "/images/fachai/1.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 87, category: "Fortune", provider: "fachai"
+  },
+  "Roma Gladiatrix": {
+    id: 402, name: "Roma Gladiatrix", image: "/images/fachai/2.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 88, category: "Roman", provider: "fachai"
+  },
+  "Tomb Secrets": {
+    id: 403, name: "Tomb Secrets", image: "/images/fachai/3.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 86, category: "Egyptian", provider: "fachai"
+  },
+  "Poker Win": {
+    id: 404, name: "Poker Win", image: "/images/fachai/4.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 85, category: "Cards", provider: "fachai"
+  },
+  "Jungle Bang Bang": {
+    id: 405, name: "Jungle Bang Bang", image: "/images/fachai/5.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 87, category: "Adventure", provider: "fachai"
+  },
+  "Sugar Bang Bang 2": {
+    id: 406, name: "Sugar Bang Bang 2", image: "/images/fachai/6.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 89, category: "Candy", provider: "fachai"
+  },
+  "Buffalo Ways": {
+    id: 407, name: "Buffalo Ways", image: "/images/fachai/7.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 88, category: "Animal", provider: "fachai"
+  },
+  "King's Sword": {
+    id: 408, name: "King's Sword", image: "/images/fachai/8.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 86, category: "Kingdom", provider: "fachai"
+  },
+  "Phoenix Fever": {
+    id: 409, name: "Phoenix Fever", image: "/images/fachai/9.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 90, category: "Fire", provider: "fachai"
+  },
+  "Goddess of Fortune": {
+    id: 410, name: "Goddess of Fortune", image: "/images/fachai/10.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 89, category: "Fortune", provider: "fachai"
+  },
+  "Odin's Treasures": {
+    id: 411, name: "Odin's Treasures", image: "/images/fachai/11.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 88, category: "Norse", provider: "fachai"
+  },
+  "Chihuahua": {
+    id: 412, name: "Chihuahua", image: "/images/fachai/12.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 84, category: "Animal", provider: "fachai"
+  },
+  "Koi Jumping for Gold": {
+    id: 413, name: "Koi Jumping for Gold", image: "/images/fachai/13.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 87, category: "Asian", provider: "fachai"
+  },
+  "Three Little Pigs": {
+    id: 414, name: "Three Little Pigs", image: "/images/fachai/14.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 85, category: "Fantasy", provider: "fachai"
+  },
+  "Poker Win 2": {
+    id: 415, name: "Poker Win 2", image: "/images/fachai/15.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 86, category: "Cards", provider: "fachai"
+  },
+  "Egyptian Bonanza": {
+    id: 416, name: "Egyptian Bonanza", image: "/images/fachai/16.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 89, category: "Egyptian", provider: "fachai"
+  },
+  "Candy Burst": {
+    id: 417, name: "Candy Burst", image: "/images/fachai/17.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 85, category: "Candy", provider: "fachai"
+  },
+  "Boxing Riches": {
+    id: 418, name: "Boxing Riches", image: "/images/fachai/18.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 87, category: "Sports", provider: "fachai"
+  },
+  "Lucky Cat": {
+    id: 419, name: "Lucky Cat", image: "/images/fachai/19.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 88, category: "Asian", provider: "fachai"
+  },
+  "Inca Queen": {
+    id: 420, name: "Inca Queen", image: "/images/fachai/20.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 86, category: "Adventure", provider: "fachai"
+  },
+  "Treasure Quest": {
+    id: 421, name: "Treasure Quest", image: "/images/fachai/21.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 87, category: "Adventure", provider: "fachai"
+  },
+  "New Year's Eve 2": {
+    id: 422, name: "New Year's Eve 2", image: "/images/fachai/22.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 85, category: "Holiday", provider: "fachai"
+  },
+  "Fortune Dragon": {
+    id: 423, name: "Fortune Dragon", image: "/images/fachai/23.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 90, category: "Dragon", provider: "fachai"
+  },
+  "Cyber Fortune God": {
+    id: 424, name: "Cyber Fortune God", image: "/images/fachai/24.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 88, category: "Cyber", provider: "fachai"
+  },
+  "Fusion Magic": {
+    id: 425, name: "Fusion Magic", image: "/images/fachai/25.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 87, category: "Fantasy", provider: "fachai"
+  },
+  "Lucky Fortunes 3x3": {
+    id: 426, name: "Lucky Fortunes 3x3", image: "/images/fachai/26.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 86, category: "Fortune", provider: "fachai"
+  },
+  "Chinese New Year Moreways": {
+    id: 427, name: "Chinese New Year Moreways", image: "/images/fachai/27.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 89, category: "Asian", provider: "fachai"
+  },
+  "Money Machine Catla": {
+    id: 428, name: "Money Machine Catla", image: "/images/fachai/28.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 85, category: "Money", provider: "fachai"
+  },
+  "Legend of Inca": {
+    id: 429, name: "Legend of Inca", image: "/images/fachai/29.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 88, category: "Adventure", provider: "fachai"
+  },
+  "Zeus": {
+    id: 430, name: "Zeus", image: "/images/fachai/30.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 91, category: "Greek", provider: "fachai"
+  },
+  "Magic Lamp": {
+    id: 431, name: "Magic Lamp", image: "/images/fachai/31.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 87, category: "Fantasy", provider: "fachai"
+  },
+  "Giant Sea Treasure Hunt": {
+    id: 432, name: "Giant Sea Treasure Hunt", image: "/images/fachai/32.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 86, category: "Sea", provider: "fachai"
+  },
+  "Sugar Bang Bang Plus": {
+    id: 433, name: "Sugar Bang Bang Plus", image: "/images/fachai/33.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 88, category: "Candy", provider: "fachai"
+  },
+  "Night Market 2": {
+    id: 434, name: "Night Market 2", image: "/images/fachai/34.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 85, category: "Asian", provider: "fachai"
+  },
+  "Crazy Bison": {
+    id: 435, name: "Crazy Bison", image: "/images/fachai/35.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 87, category: "Animal", provider: "fachai"
+  },
+  "Golden Lucky Egg": {
+    id: 436, name: "Golden Lucky Egg", image: "/images/fachai/36.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 86, category: "Fortune", provider: "fachai"
+  },
+  "Super Elements": {
+    id: 437, name: "Super Elements", image: "/images/fachai/37.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 89, category: "Fantasy", provider: "fachai"
+  },
+  "Rich Tycoon": {
+    id: 438, name: "Rich Tycoon", image: "/images/fachai/38.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 88, category: "Money", provider: "fachai"
+  },
+  "Lucky Fortunes": {
+    id: 439, name: "Lucky Fortunes", image: "/images/fachai/39.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 87, category: "Fortune", provider: "fachai"
+  },
+  "Click to Send": {
+    id: 440, name: "Click to Send", image: "/images/fachai/40.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 84, category: "Fun", provider: "fachai"
+  },
+  "Gladiators": {
+    id: 441, name: "Gladiators", image: "/images/fachai/41.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 88, category: "Roman", provider: "fachai"
+  },
+  "Circus Coin Pusher": {
+    id: 442, name: "Circus Coin Pusher", image: "/images/fachai/42.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 85, category: "Party", provider: "fachai"
+  },
+  "Treasure Hunt": {
+    id: 443, name: "Treasure Hunt", image: "/images/fachai/43.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 86, category: "Adventure", provider: "fachai"
+  },
+  "Mines": {
+    id: 444, name: "Mines", image: "/images/fachai/44.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 90, category: "Crash", provider: "fachai"
+  },
+  "Magic Beans": {
+    id: 445, name: "Magic Beans", image: "/images/fachai/45.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 85, category: "Fantasy", provider: "fachai"
+  },
+  "DJ Boom Boom": {
+    id: 446, name: "DJ Boom Boom", image: "/images/fachai/46.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 87, category: "Party", provider: "fachai"
+  },
+  "Night Market": {
+    id: 447, name: "Night Market", image: "/images/fachai/47.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 84, category: "Asian", provider: "fachai"
+  },
+  "Fortune Muscle Cat": {
+    id: 448, name: "Fortune Muscle Cat", image: "/images/fachai/48.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 86, category: "Animal", provider: "fachai"
+  },
+  "Robin Hood": {
+    id: 449, name: "Robin Hood", image: "/images/fachai/49.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 88, category: "Adventure", provider: "fachai"
+  },
+  "New Year's Eve": {
+    id: 450, name: "New Year's Eve", image: "/images/fachai/50.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 85, category: "Holiday", provider: "fachai"
+  }
+};
+
+// ═══════════════════════════════════════════════════════════════════════════════
 // PLATAFORMAS ANTIGAS (YG, DG, MG, EG, HG, FG) - SEM ALTERAÇÃO
 // ═══════════════════════════════════════════════════════════════════════════════
 
