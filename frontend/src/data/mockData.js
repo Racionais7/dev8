@@ -176,7 +176,7 @@ const pgNewGamesData = {
   "Wild Ape": {
     id: 13,
     name: "Wild Ape",
-    image: "/images/pg-new/Wild Ape#3258.png",
+    image: "/images/pg-new/Wild Ape.png",
     bets: ["R$ 0,50", "R$ 2,00", "R$ 4,00"],
     basePayout: 84,
     category: "Animal",
