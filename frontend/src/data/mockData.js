@@ -1891,22 +1891,23 @@ export const providersByPlatform = {
     { id: 'microgaming', name: 'Micro Gaming', rank: 4 },
     { id: 'fachai', name: 'FA CHAI Gaming', rank: 5 }
   ],
-  // Outras plataformas mantêm providers antigos
+  // Outras plataformas (YG, DG, MG, EG, HG, FG) com PG, PP e providers antigos
   DEFAULT: [
-    { id: 'pg', name: 'PG Soft', rank: 1 },
-    { id: 'pragmatic', name: 'Pragmatic Play', rank: 2 },
-    { id: 'tada', name: 'Tada Gaming', rank: 3 },
-    { id: 'spirit', name: 'Spirit Gaming', rank: 4 }
+    { id: 'pg', name: 'PG', rank: 1 },
+    { id: 'pp', name: 'PP', rank: 2 },
+    { id: 'pragmatic', name: 'Pragmatic Play', rank: 3 },
+    { id: 'tada', name: 'Tada Gaming', rank: 4 },
+    { id: 'spirit', name: 'Spirit Gaming', rank: 5 }
   ]
 };
 
 // Provider ranking priority (ordem de exibição) - padrão
 export const providerRankingOrder = [
-  { id: 'pg', name: 'PG Soft', rank: 1 },
-  { id: 'pragmatic', name: 'Pragmatic Play', rank: 2 },
-  { id: 'tada', name: 'Tada Gaming', rank: 3 },
-  { id: 'spirit', name: 'Spirit Gaming', rank: 4 },
-  { id: 'revenge', name: 'Revenge', rank: 5 }
+  { id: 'pg', name: 'PG', rank: 1 },
+  { id: 'pp', name: 'PP', rank: 2 },
+  { id: 'pragmatic', name: 'Pragmatic Play', rank: 3 },
+  { id: 'tada', name: 'Tada Gaming', rank: 4 },
+  { id: 'spirit', name: 'Spirit Gaming', rank: 5 }
 ];
 
 // Função para gerar payout dinâmico
