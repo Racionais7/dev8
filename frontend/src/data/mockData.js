@@ -1774,8 +1774,11 @@ function getOrderedGames(orderList, gamesData) {
 // EXPORTAR DADOS ORDENADOS POR PLATAFORMA
 // ═══════════════════════════════════════════════════════════════════════════════
 
-// Jogos para AG, BG, WG (novo ranking com PG)
+// Jogos PG (novo ranking)
 const newPlatformGames = getOrderedGames(PG_NEW_ORDER, pgNewGamesData);
+
+// Jogos PP (novo ranking) 
+const newPPGames = getOrderedGames(PP_NEW_ORDER, ppNewGamesData);
 
 // Jogos para YG, DG, MG, EG, HG, FG (antigos - sem alteração)
 const oldPlatformGames = {
@@ -1787,70 +1790,77 @@ const oldPlatformGames = {
 
 // Dados exportados por plataforma
 export const slotsDataByPlatform = {
-  // TODAS as plataformas usam o novo ranking PG
+  // TODAS as plataformas usam os novos rankings PG e PP
   AGJOGO: {
     pg: newPlatformGames,
-    pp: [],
+    pp: newPPGames,
     amigo: [],
     microgaming: [],
     fachai: []
   },
   BGJOGO: {
     pg: newPlatformGames,
-    pp: [],
+    pp: newPPGames,
     amigo: [],
     microgaming: [],
     fachai: []
   },
   WGJOGO: {
     pg: newPlatformGames,
-    pp: [],
+    pp: newPPGames,
     amigo: [],
     microgaming: [],
     fachai: []
   },
-  // YG, DG, MG, EG, HG, FG também usam os novos jogos PG
+  // YG, DG, MG, EG, HG, FG também usam os novos jogos PG e PP
   YGJOGO: {
     pg: newPlatformGames,
+    pp: newPPGames,
     pragmatic: oldPlatformGames.pragmatic,
     spirit: oldPlatformGames.spirit,
     tada: oldPlatformGames.tada
   },
   DGJOGO: {
     pg: newPlatformGames,
+    pp: newPPGames,
     pragmatic: oldPlatformGames.pragmatic,
     spirit: oldPlatformGames.spirit,
     tada: oldPlatformGames.tada
   },
   MGJOGO: {
     pg: newPlatformGames,
+    pp: newPPGames,
     pragmatic: oldPlatformGames.pragmatic,
     spirit: oldPlatformGames.spirit,
     tada: oldPlatformGames.tada
   },
   EGJOGO: {
     pg: newPlatformGames,
+    pp: newPPGames,
     pragmatic: oldPlatformGames.pragmatic,
     spirit: oldPlatformGames.spirit,
     tada: oldPlatformGames.tada
   },
   HGJOGO: {
     pg: newPlatformGames,
+    pp: newPPGames,
     pragmatic: oldPlatformGames.pragmatic,
     spirit: oldPlatformGames.spirit,
     tada: oldPlatformGames.tada
   },
   FGJOGO: {
     pg: newPlatformGames,
+    pp: newPPGames,
     pragmatic: oldPlatformGames.pragmatic,
     spirit: oldPlatformGames.spirit,
     tada: oldPlatformGames.tada
   }
 };
 
-// Export padrão para compatibilidade (usa novos jogos PG)
+// Export padrão para compatibilidade (usa novos jogos PG e PP)
 export const slotsData = {
   pg: newPlatformGames,
+  pp: newPPGames,
   pragmatic: oldPlatformGames.pragmatic,
   spirit: oldPlatformGames.spirit,
   tada: oldPlatformGames.tada,
