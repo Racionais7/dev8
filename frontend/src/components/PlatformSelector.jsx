@@ -5,9 +5,11 @@ import { platformImage } from '../data/mockData';
 const gameProviders = [
   { name: 'PG', fullName: 'PG Soft', color: '#F59E0B', logo: '/providers/pg-soft.png' },
   { name: 'PP', fullName: 'Pragmatic Play', color: '#3B82F6', logo: '/providers/pragmatic-play.png' },
+  { name: 'Amigo', fullName: 'Amigo Gaming', color: '#FF6B35', logo: '/assets/providers/amigo.png' },
+  { name: 'Micro', fullName: 'Micro Gaming', color: '#00D4AA', logo: '/assets/providers/microgaming.png' },
+  { name: 'FACHAI', fullName: 'FA CHAI Gaming', color: '#FFD700', logo: '/assets/providers/fachai.png' },
   { name: 'Spirit', fullName: 'Spirit Gaming', color: '#8B5CF6', logo: '/providers/spirit.png' },
-  { name: 'Tada', fullName: 'Tada Gaming', color: '#EC4899', logo: '/providers/tada.png' },
-  { name: 'Reeveme', fullName: 'Reeveme', color: '#10B981', logo: '/providers/reeveme.png' }
+  { name: 'Tada', fullName: 'Tada Gaming', color: '#EC4899', logo: '/providers/tada.png' }
 ];
 
 // Platform logos - orbitLogo for the spinning wheel, logo for the selection grid
