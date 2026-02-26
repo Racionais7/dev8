@@ -31,34 +31,34 @@ export const platformImage = "/assets/slots/platform-main.jpeg";
 // Fabricantes: PG, PP, Amigo Gaming, Micro Gaming, FA CHAI Gaming
 // ═══════════════════════════════════════════════════════════════════════════════
 
-// PG SOFT - Novo ranking de 28 jogos para AG, BG, WG
+// PG SOFT - Novo ranking de 28 jogos para AG, BG, WG (NOMES EM INGLÊS)
 const PG_NEW_ORDER = [
   "Fortune Tiger",
   "Fortune Rabbit",
   "Fortune Ox",
-  "Dragão da Fortuna",
+  "Fortune Dragon",
   "Pinata Wins",
-  "Cobra da Fortuna",
+  "Fortune Snake",
   "Midas Fortune",
   "Wild Bounty Showdown",
   "Fortune Mouse",
   "Cash Mania",
-  "Missão do Tesouro do Dragão",
+  "Dragon Treasure",
   "Wild Bandito",
-  "Wild Ape#3258",
+  "Wild Ape #3258",
   "Anubis Wrath",
   "Chicky Run",
   "Ganesha Gold",
-  "Império Majestoso",
-  "Dupla Fortuna",
+  "Majestic Kingdom",
+  "Double Fortune",
   "Werewolf's Hunt",
   "Dragon Hatch",
   "Lucky Neko",
   "Treasures of Aztec",
   "Genie's 3 Wishes",
-  "Frenesi do Ouro do Kraken",
-  "Recompensa dos Grimm Hansel e Gretel",
-  "Futebol Fever",
+  "Kraken's Gold",
+  "Grimm's Rewards",
+  "Football Fever",
   "The Great Icescape",
   "Cocktail Nights"
 ];
