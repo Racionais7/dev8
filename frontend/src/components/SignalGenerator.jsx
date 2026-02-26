@@ -610,10 +610,35 @@ const SignalGenerator = ({ slot, onBack, platformLink }) => {
           <div className="w-14 h-14 rounded-xl overflow-hidden border border-white/10">
             <img src={slot.image} alt={slot.name} className="w-full h-full object-cover" />
           </div>
-          <div>
+          <div className="flex-1">
             <h1 className="text-lg font-semibold text-white">{slot.name}</h1>
             <p className="text-sm text-gray-500">{providerName}</p>
           </div>
+          {/* Copy Game Name Button */}
+          <button
+            onClick={() => {
+              navigator.clipboard.writeText(slot.name);
+              const btn = document.getElementById('copy-name-btn');
+              if (btn) {
+                btn.innerHTML = `<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg><span>Copiado!</span>`;
+                btn.classList.remove('bg-violet-500/10', 'border-violet-500/20', 'text-violet-400', 'hover:bg-violet-500/20');
+                btn.classList.add('bg-emerald-500/10', 'border-emerald-500/20', 'text-emerald-400');
+                setTimeout(() => {
+                  btn.innerHTML = `<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg><span>Copiar nome</span>`;
+                  btn.classList.add('bg-violet-500/10', 'border-violet-500/20', 'text-violet-400', 'hover:bg-violet-500/20');
+                  btn.classList.remove('bg-emerald-500/10', 'border-emerald-500/20', 'text-emerald-400');
+                }, 2000);
+              }
+            }}
+            id="copy-name-btn"
+            data-testid="copy-game-name-btn"
+            className="flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-medium bg-violet-500/10 border border-violet-500/20 text-violet-400 hover:bg-violet-500/20 transition-all duration-200"
+          >
+            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+            </svg>
+            <span>Copiar nome</span>
+          </button>
         </div>
 
         {/* Main Content */}
