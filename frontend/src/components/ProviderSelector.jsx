@@ -93,7 +93,11 @@ const ProviderLogos = {
     />
   ),
   fachai: () => (
-    <span className="text-xs font-bold text-white">FA CHAI</span>
+    <img 
+      src="/assets/providers/fachai.png" 
+      alt="FA CHAI Gaming" 
+      className="h-8 w-auto object-contain"
+    />
   ),
   tada: () => (
     <img 
