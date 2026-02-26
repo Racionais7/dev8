@@ -614,50 +614,77 @@ const SignalGenerator = ({ slot, onBack, platformLink }) => {
             <h1 className="text-lg font-semibold text-white">{slot.name}</h1>
             <p className="text-sm text-gray-500">{providerName}</p>
           </div>
-          {/* Copy Game Name Button */}
+          {/* Copy Game Name Button - Premium Design */}
           <button
             onClick={async () => {
               const btn = document.getElementById('copy-name-btn');
+              const iconDefault = document.getElementById('copy-icon-default');
+              const iconSuccess = document.getElementById('copy-icon-success');
+              const textSpan = document.getElementById('copy-text');
+              
               try {
                 await navigator.clipboard.writeText(slot.name);
-                if (btn) {
-                  btn.innerHTML = `<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg><span>Copiado!</span>`;
-                  btn.classList.remove('bg-violet-500/10', 'border-violet-500/20', 'text-violet-400', 'hover:bg-violet-500/20');
-                  btn.classList.add('bg-emerald-500/10', 'border-emerald-500/20', 'text-emerald-400');
-                  setTimeout(() => {
-                    btn.innerHTML = `<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg><span>Copiar nome</span>`;
-                    btn.classList.add('bg-violet-500/10', 'border-violet-500/20', 'text-violet-400', 'hover:bg-violet-500/20');
-                    btn.classList.remove('bg-emerald-500/10', 'border-emerald-500/20', 'text-emerald-400');
-                  }, 2000);
-                }
               } catch (err) {
-                // Fallback: select text in a temporary input
+                // Fallback para navegadores sem suporte
                 const input = document.createElement('input');
                 input.value = slot.name;
                 document.body.appendChild(input);
                 input.select();
                 document.execCommand('copy');
                 document.body.removeChild(input);
-                if (btn) {
-                  btn.innerHTML = `<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg><span>Copiado!</span>`;
-                  btn.classList.remove('bg-violet-500/10', 'border-violet-500/20', 'text-violet-400', 'hover:bg-violet-500/20');
-                  btn.classList.add('bg-emerald-500/10', 'border-emerald-500/20', 'text-emerald-400');
-                  setTimeout(() => {
-                    btn.innerHTML = `<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg><span>Copiar nome</span>`;
-                    btn.classList.add('bg-violet-500/10', 'border-violet-500/20', 'text-violet-400', 'hover:bg-violet-500/20');
-                    btn.classList.remove('bg-emerald-500/10', 'border-emerald-500/20', 'text-emerald-400');
-                  }, 2000);
-                }
+              }
+              
+              // Animação de sucesso
+              if (btn && iconDefault && iconSuccess && textSpan) {
+                iconDefault.classList.add('hidden');
+                iconSuccess.classList.remove('hidden');
+                textSpan.textContent = 'Copiado!';
+                btn.classList.remove('from-violet-600/20', 'to-purple-600/20', 'border-violet-500/30', 'hover:from-violet-600/30', 'hover:to-purple-600/30', 'hover:border-violet-500/50', 'hover:shadow-violet-500/20');
+                btn.classList.add('from-emerald-600/20', 'to-teal-600/20', 'border-emerald-500/50', 'shadow-emerald-500/20');
+                
+                setTimeout(() => {
+                  iconDefault.classList.remove('hidden');
+                  iconSuccess.classList.add('hidden');
+                  textSpan.textContent = 'Copiar nome';
+                  btn.classList.add('from-violet-600/20', 'to-purple-600/20', 'border-violet-500/30', 'hover:from-violet-600/30', 'hover:to-purple-600/30', 'hover:border-violet-500/50', 'hover:shadow-violet-500/20');
+                  btn.classList.remove('from-emerald-600/20', 'to-teal-600/20', 'border-emerald-500/50', 'shadow-emerald-500/20');
+                }, 2000);
               }
             }}
             id="copy-name-btn"
             data-testid="copy-game-name-btn"
-            className="flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-medium bg-violet-500/10 border border-violet-500/20 text-violet-400 hover:bg-violet-500/20 transition-all duration-200"
+            className="group relative flex items-center gap-2.5 px-4 py-2.5 rounded-xl text-sm font-semibold 
+                       bg-gradient-to-r from-violet-600/20 to-purple-600/20 
+                       border border-violet-500/30
+                       hover:from-violet-600/30 hover:to-purple-600/30 hover:border-violet-500/50
+                       hover:shadow-lg hover:shadow-violet-500/20
+                       active:scale-95
+                       transition-all duration-300 ease-out"
           >
-            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-            </svg>
-            <span>Copiar nome</span>
+            {/* Glow effect */}
+            <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-violet-500/10 to-purple-500/10 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            
+            {/* Icon container */}
+            <div className="relative w-5 h-5">
+              {/* Default copy icon */}
+              <svg id="copy-icon-default" className="w-5 h-5 text-violet-400 group-hover:text-violet-300 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+              </svg>
+              {/* Success checkmark icon */}
+              <svg id="copy-icon-success" className="hidden w-5 h-5 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            
+            {/* Text */}
+            <span id="copy-text" className="relative text-violet-300 group-hover:text-white transition-colors">
+              Copiar nome
+            </span>
+            
+            {/* Shine effect on hover */}
+            <div className="absolute inset-0 rounded-xl overflow-hidden">
+              <div className="absolute inset-0 translate-x-[-100%] group-hover:translate-x-[100%] bg-gradient-to-r from-transparent via-white/10 to-transparent transition-transform duration-700 ease-out" />
+            </div>
           </button>
         </div>
 
