@@ -99,24 +99,28 @@ const ProviderLogos = {
 };
 
 const ProviderSelector = ({ selectedProvider, onProviderChange, selectedPlatform }) => {
-  // Platforms that DON'T have Spirit and Reeveme providers
-  const platformsWithoutSpiritReeveme = ['WGJOGO', 'AGJOGO', 'BGJOGO'];
-  const excludeSpiritReeveme = platformsWithoutSpiritReeveme.includes(selectedPlatform);
+  // Platforms with NEW providers (AG, BG, WG)
+  const newPlatforms = ['WGJOGO', 'AGJOGO', 'BGJOGO'];
+  const isNewPlatform = newPlatforms.includes(selectedPlatform);
   
-  // Simple provider data - filter based on platform
-  const providers = providerRankingOrder
-    .filter(p => {
-      // If platform is WG, AG, or BG, exclude spirit and revenge
-      if (excludeSpiritReeveme && (p.id === 'spirit' || p.id === 'revenge')) {
-        return false;
-      }
-      return true;
-    })
-    .map(p => ({
-      id: p.id,
-      name: p.name,
-      hasGames: (slotsData[p.id]?.length || 0) > 0
-    }));
+  // Get providers list based on platform
+  const providerList = isNewPlatform 
+    ? providersByPlatform[selectedPlatform] || providersByPlatform.DEFAULT
+    : providersByPlatform.DEFAULT;
+  
+  // Get slots data based on platform
+  const platformSlots = isNewPlatform 
+    ? slotsDataByPlatform[selectedPlatform] || {}
+    : slotsData;
+  
+  // Map providers with game availability
+  const providers = providerList.map(p => ({
+    id: p.id,
+    name: p.name,
+    hasGames: isNewPlatform 
+      ? (platformSlots[p.id]?.length || 0) > 0
+      : (slotsData[p.id]?.length || 0) > 0
+  }));
 
   return (
     <section className="py-4 px-4 sm:px-6 border-b border-white/[0.03]">
