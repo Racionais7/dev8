@@ -1377,9 +1377,9 @@ export const slotsDataByPlatform = {
   }
 };
 
-// Export padrão para compatibilidade (usa jogos antigos)
+// Export padrão para compatibilidade (usa novos jogos PG)
 export const slotsData = {
-  pg: oldPlatformGames.pg,
+  pg: newPlatformGames,
   pragmatic: oldPlatformGames.pragmatic,
   spirit: oldPlatformGames.spirit,
   tada: oldPlatformGames.tada,
