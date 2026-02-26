@@ -75,6 +75,18 @@ const PragmaticLogo = ({ className = "h-5" }) => (
 const ProviderLogos = {
   pg: () => <PGSoftLogo className="h-5 w-auto" />,
   pragmatic: () => <PragmaticLogo className="h-6 w-auto" />,
+  pp: () => (
+    <span className="text-sm font-bold text-white tracking-wide">PP</span>
+  ),
+  amigo: () => (
+    <span className="text-xs font-bold text-white">Amigo Gaming</span>
+  ),
+  microgaming: () => (
+    <span className="text-xs font-bold text-white">Micro Gaming</span>
+  ),
+  fachai: () => (
+    <span className="text-xs font-bold text-white">FA CHAI</span>
+  ),
   tada: () => (
     <img 
       src="/assets/providers/tada.png" 
