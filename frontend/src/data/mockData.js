@@ -2561,6 +2561,9 @@ const newAmigoGames = getOrderedGames(AMIGO_ORDER, amigoGamesData);
 // Jogos Micro Gaming (apenas para AG, BG, WG)
 const newMicroGames = getOrderedGames(MICROGAMING_ORDER, microgamingGamesData);
 
+// Jogos FA CHAI Gaming (apenas para AG, BG, WG)
+const newFachaiGames = getOrderedGames(FACHAI_ORDER, fachaiGamesData);
+
 // Jogos para YG, DG, MG, EG, HG, FG (antigos - sem alteração)
 const oldPlatformGames = {
   pg: getOrderedGames(PG_SOFT_ORDER, pgGamesData),
@@ -2571,29 +2574,29 @@ const oldPlatformGames = {
 
 // Dados exportados por plataforma
 export const slotsDataByPlatform = {
-  // AG, BG, WG têm Amigo Gaming e Micro Gaming
+  // AG, BG, WG têm TODOS os providers: PG, PP, Amigo, Micro Gaming, FA CHAI
   AGJOGO: {
     pg: newPlatformGames,
     pp: newPPGames,
     amigo: newAmigoGames,
     microgaming: newMicroGames,
-    fachai: []
+    fachai: newFachaiGames
   },
   BGJOGO: {
     pg: newPlatformGames,
     pp: newPPGames,
     amigo: newAmigoGames,
     microgaming: newMicroGames,
-    fachai: []
+    fachai: newFachaiGames
   },
   WGJOGO: {
     pg: newPlatformGames,
     pp: newPPGames,
     amigo: newAmigoGames,
     microgaming: newMicroGames,
-    fachai: []
+    fachai: newFachaiGames
   },
-  // YG, DG, MG, EG, HG, FG NÃO têm Amigo Gaming nem Micro Gaming
+  // YG, DG, MG, EG, HG, FG NÃO têm Amigo, Micro Gaming nem FA CHAI
   YGJOGO: {
     pg: newPlatformGames,
     pp: newPPGames,
