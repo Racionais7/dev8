@@ -2682,9 +2682,8 @@ export const providersByPlatform = {
 export const providerRankingOrder = [
   { id: 'pg', name: 'PG', rank: 1 },
   { id: 'pp', name: 'PP', rank: 2 },
-  { id: 'pragmatic', name: 'Pragmatic Play', rank: 3 },
-  { id: 'tada', name: 'Tada Gaming', rank: 4 },
-  { id: 'spirit', name: 'Spirit Gaming', rank: 5 }
+  { id: 'tada', name: 'Tada Gaming', rank: 3 },
+  { id: 'spirit', name: 'Spirit Gaming', rank: 4 }
 ];
 
 // Função para gerar payout dinâmico
