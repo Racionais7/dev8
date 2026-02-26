@@ -791,6 +791,266 @@ const ppNewGamesData = {
 };
 
 // ═══════════════════════════════════════════════════════════════════════════════
+// AMIGO GAMING - 50 jogos APENAS para AG, BG, WG
+// ═══════════════════════════════════════════════════════════════════════════════
+
+const AMIGO_ORDER = [
+  "Olympus Rivals",
+  "Lucky Bags",
+  "3 Lucky Souls",
+  "Moon Guardians",
+  "Gods of Sand",
+  "3 Dead",
+  "3 Energy Crowns",
+  "3 Spiritual Volcanoes",
+  "Lucky Brothers",
+  "3 Tombs",
+  "Flaming Crown Deluxe",
+  "Diamond Invasion",
+  "Triple Chili",
+  "Thunder & Love",
+  "5 Fruit Invaders",
+  "Fruits & Coins",
+  "Power of Hades",
+  "Piggy Coins",
+  "Fruit Invaders",
+  "3 Totem Animals",
+  "Voodoo Amulets",
+  "Samurai Cats",
+  "Cube Guys",
+  "Dice Invaders",
+  "Regal Fruits 1000",
+  "Coinboy Riches",
+  "Skull Coins",
+  "Maximum Fury",
+  "Cricket 1st League",
+  "Olympus Blessing",
+  "Monkey Friend 2",
+  "Mega Crown",
+  "Punk Monkey",
+  "Gift Mania",
+  "VIP Fruits",
+  "Crime City",
+  "Lamp of Wishes",
+  "Galactic Chase",
+  "Dragon Destiny",
+  "Vampire Joker",
+  "Kingdom Crown",
+  "Book of Zeus",
+  "Rabbit Bonanza",
+  "3 Pharaohs",
+  "Easy Money",
+  "Dice Club",
+  "Fruit Explosion",
+  "Miss Neko",
+  "Fiery Phoenix",
+  "3 Frozen Crowns"
+];
+
+const amigoGamesData = {
+  "Olympus Rivals": {
+    id: 201, name: "Olympus Rivals", image: "/images/amigo/1.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 89, category: "Greek", provider: "amigo"
+  },
+  "Lucky Bags": {
+    id: 202, name: "Lucky Bags", image: "/images/amigo/2.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 87, category: "Fortune", provider: "amigo"
+  },
+  "3 Lucky Souls": {
+    id: 203, name: "3 Lucky Souls", image: "/images/amigo/3.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 86, category: "Horror", provider: "amigo"
+  },
+  "Moon Guardians": {
+    id: 204, name: "Moon Guardians", image: "/images/amigo/4.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 88, category: "Fantasy", provider: "amigo"
+  },
+  "Gods of Sand": {
+    id: 205, name: "Gods of Sand", image: "/images/amigo/5.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 90, category: "Egyptian", provider: "amigo"
+  },
+  "3 Dead": {
+    id: 206, name: "3 Dead", image: "/images/amigo/6.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 85, category: "Horror", provider: "amigo"
+  },
+  "3 Energy Crowns": {
+    id: 207, name: "3 Energy Crowns", image: "/images/amigo/7.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 87, category: "Classic", provider: "amigo"
+  },
+  "3 Spiritual Volcanoes": {
+    id: 208, name: "3 Spiritual Volcanoes", image: "/images/amigo/8.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 86, category: "Nature", provider: "amigo"
+  },
+  "Lucky Brothers": {
+    id: 209, name: "Lucky Brothers", image: "/images/amigo/9.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 84, category: "Fortune", provider: "amigo"
+  },
+  "3 Tombs": {
+    id: 210, name: "3 Tombs", image: "/images/amigo/10.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 88, category: "Egyptian", provider: "amigo"
+  },
+  "Flaming Crown Deluxe": {
+    id: 211, name: "Flaming Crown Deluxe", image: "/images/amigo/11.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 89, category: "Fire", provider: "amigo"
+  },
+  "Diamond Invasion": {
+    id: 212, name: "Diamond Invasion", image: "/images/amigo/12.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 87, category: "Gems", provider: "amigo"
+  },
+  "Triple Chili": {
+    id: 213, name: "Triple Chili", image: "/images/amigo/13.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 85, category: "Food", provider: "amigo"
+  },
+  "Thunder & Love": {
+    id: 214, name: "Thunder & Love", image: "/images/amigo/14.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 86, category: "Fantasy", provider: "amigo"
+  },
+  "5 Fruit Invaders": {
+    id: 215, name: "5 Fruit Invaders", image: "/images/amigo/15.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 84, category: "Fruit", provider: "amigo"
+  },
+  "Fruits & Coins": {
+    id: 216, name: "Fruits & Coins", image: "/images/amigo/16.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 83, category: "Fruit", provider: "amigo"
+  },
+  "Power of Hades": {
+    id: 217, name: "Power of Hades", image: "/images/amigo/17.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 90, category: "Greek", provider: "amigo"
+  },
+  "Piggy Coins": {
+    id: 218, name: "Piggy Coins", image: "/images/amigo/18.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 85, category: "Animal", provider: "amigo"
+  },
+  "Fruit Invaders": {
+    id: 219, name: "Fruit Invaders", image: "/images/amigo/19.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 84, category: "Fruit", provider: "amigo"
+  },
+  "3 Totem Animals": {
+    id: 220, name: "3 Totem Animals", image: "/images/amigo/20.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 87, category: "Animal", provider: "amigo"
+  },
+  "Voodoo Amulets": {
+    id: 221, name: "Voodoo Amulets", image: "/images/amigo/21.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 86, category: "Horror", provider: "amigo"
+  },
+  "Samurai Cats": {
+    id: 222, name: "Samurai Cats", image: "/images/amigo/22.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 88, category: "Asian", provider: "amigo"
+  },
+  "Cube Guys": {
+    id: 223, name: "Cube Guys", image: "/images/amigo/23.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 83, category: "Fun", provider: "amigo"
+  },
+  "Dice Invaders": {
+    id: 224, name: "Dice Invaders", image: "/images/amigo/24.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 85, category: "Classic", provider: "amigo"
+  },
+  "Regal Fruits 1000": {
+    id: 225, name: "Regal Fruits 1000", image: "/images/amigo/25.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 91, category: "Fruit", provider: "amigo"
+  },
+  "Coinboy Riches": {
+    id: 226, name: "Coinboy Riches", image: "/images/amigo/26.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 86, category: "Money", provider: "amigo"
+  },
+  "Skull Coins": {
+    id: 227, name: "Skull Coins", image: "/images/amigo/27.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 85, category: "Horror", provider: "amigo"
+  },
+  "Maximum Fury": {
+    id: 228, name: "Maximum Fury", image: "/images/amigo/28.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 89, category: "Action", provider: "amigo"
+  },
+  "Cricket 1st League": {
+    id: 229, name: "Cricket 1st League", image: "/images/amigo/29.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 84, category: "Sports", provider: "amigo"
+  },
+  "Olympus Blessing": {
+    id: 230, name: "Olympus Blessing", image: "/images/amigo/30.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 90, category: "Greek", provider: "amigo"
+  },
+  "Monkey Friend 2": {
+    id: 231, name: "Monkey Friend 2", image: "/images/amigo/31.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 86, category: "Animal", provider: "amigo"
+  },
+  "Mega Crown": {
+    id: 232, name: "Mega Crown", image: "/images/amigo/32.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 88, category: "Classic", provider: "amigo"
+  },
+  "Punk Monkey": {
+    id: 233, name: "Punk Monkey", image: "/images/amigo/33.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 85, category: "Animal", provider: "amigo"
+  },
+  "Gift Mania": {
+    id: 234, name: "Gift Mania", image: "/images/amigo/34.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 84, category: "Party", provider: "amigo"
+  },
+  "VIP Fruits": {
+    id: 235, name: "VIP Fruits", image: "/images/amigo/35.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 83, category: "Fruit", provider: "amigo"
+  },
+  "Crime City": {
+    id: 236, name: "Crime City", image: "/images/amigo/36.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 87, category: "Action", provider: "amigo"
+  },
+  "Lamp of Wishes": {
+    id: 237, name: "Lamp of Wishes", image: "/images/amigo/37.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 88, category: "Fantasy", provider: "amigo"
+  },
+  "Galactic Chase": {
+    id: 238, name: "Galactic Chase", image: "/images/amigo/38.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 86, category: "Space", provider: "amigo"
+  },
+  "Dragon Destiny": {
+    id: 239, name: "Dragon Destiny", image: "/images/amigo/39.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 89, category: "Dragon", provider: "amigo"
+  },
+  "Vampire Joker": {
+    id: 240, name: "Vampire Joker", image: "/images/amigo/40.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 85, category: "Horror", provider: "amigo"
+  },
+  "Kingdom Crown": {
+    id: 241, name: "Kingdom Crown", image: "/images/amigo/41.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 87, category: "Kingdom", provider: "amigo"
+  },
+  "Book of Zeus": {
+    id: 242, name: "Book of Zeus", image: "/images/amigo/42.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 90, category: "Greek", provider: "amigo"
+  },
+  "Rabbit Bonanza": {
+    id: 243, name: "Rabbit Bonanza", image: "/images/amigo/43.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 86, category: "Animal", provider: "amigo"
+  },
+  "3 Pharaohs": {
+    id: 244, name: "3 Pharaohs", image: "/images/amigo/44.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 88, category: "Egyptian", provider: "amigo"
+  },
+  "Easy Money": {
+    id: 245, name: "Easy Money", image: "/images/amigo/45.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 84, category: "Money", provider: "amigo"
+  },
+  "Dice Club": {
+    id: 246, name: "Dice Club", image: "/images/amigo/46.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 83, category: "Classic", provider: "amigo"
+  },
+  "Fruit Explosion": {
+    id: 247, name: "Fruit Explosion", image: "/images/amigo/47.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 85, category: "Fruit", provider: "amigo"
+  },
+  "Miss Neko": {
+    id: 248, name: "Miss Neko", image: "/images/amigo/48.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 86, category: "Asian", provider: "amigo"
+  },
+  "Fiery Phoenix": {
+    id: 249, name: "Fiery Phoenix", image: "/images/amigo/49.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 88, category: "Fire", provider: "amigo"
+  },
+  "3 Frozen Crowns": {
+    id: 250, name: "3 Frozen Crowns", image: "/images/amigo/50.png",
+    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"], basePayout: 87, category: "Ice", provider: "amigo"
+  }
+};
+
+// ═══════════════════════════════════════════════════════════════════════════════
 // PLATAFORMAS ANTIGAS (YG, DG, MG, EG, HG, FG) - SEM ALTERAÇÃO
 // ═══════════════════════════════════════════════════════════════════════════════
 
