@@ -2040,6 +2040,9 @@ const newPlatformGames = getOrderedGames(PG_NEW_ORDER, pgNewGamesData);
 // Jogos PP (novo ranking) 
 const newPPGames = getOrderedGames(PP_NEW_ORDER, ppNewGamesData);
 
+// Jogos Amigo Gaming (apenas para AG, BG, WG)
+const newAmigoGames = getOrderedGames(AMIGO_ORDER, amigoGamesData);
+
 // Jogos para YG, DG, MG, EG, HG, FG (antigos - sem alteração)
 const oldPlatformGames = {
   pg: getOrderedGames(PG_SOFT_ORDER, pgGamesData),
@@ -2050,29 +2053,29 @@ const oldPlatformGames = {
 
 // Dados exportados por plataforma
 export const slotsDataByPlatform = {
-  // TODAS as plataformas usam os novos rankings PG e PP
+  // AG, BG, WG têm Amigo Gaming
   AGJOGO: {
     pg: newPlatformGames,
     pp: newPPGames,
-    amigo: [],
+    amigo: newAmigoGames,
     microgaming: [],
     fachai: []
   },
   BGJOGO: {
     pg: newPlatformGames,
     pp: newPPGames,
-    amigo: [],
+    amigo: newAmigoGames,
     microgaming: [],
     fachai: []
   },
   WGJOGO: {
     pg: newPlatformGames,
     pp: newPPGames,
-    amigo: [],
+    amigo: newAmigoGames,
     microgaming: [],
     fachai: []
   },
-  // YG, DG, MG, EG, HG, FG também usam os novos jogos PG e PP
+  // YG, DG, MG, EG, HG, FG NÃO têm Amigo Gaming
   YGJOGO: {
     pg: newPlatformGames,
     pp: newPPGames,
