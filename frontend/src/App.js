@@ -6,7 +6,7 @@ import SignalGenerator from "./components/SignalGenerator";
 import ProviderSelector from "./components/ProviderSelector";
 import PlatformSelector from "./components/PlatformSelector";
 import IntroAnimation from "./components/IntroAnimation";
-import { slotsData, providers, platformLinks } from "./data/mockData";
+import { slotsData, slotsDataByPlatform, providers, providersByPlatform, platformLinks } from "./data/mockData";
 
 // Função para calcular usuários online realistas baseado na hora
 const calculateRealisticOnline = () => {
