@@ -33,7 +33,10 @@ function App() {
   const [showIntro, setShowIntro] = useState(true);
   
   // Estados dinâmicos e realistas
-  const [accuracy, setAccuracy] = useState(89.2);
+  const [accuracy, setAccuracy] = useState(() => {
+    // Valor inicial aleatório entre 80% e 99%
+    return parseFloat((Math.random() * 19 + 80).toFixed(1));
+  });
   const [onlineUsers, setOnlineUsers] = useState(calculateRealisticOnline());
 
   // Scroll para o topo quando selecionar uma plataforma
