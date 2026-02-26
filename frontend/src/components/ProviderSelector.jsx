@@ -86,7 +86,11 @@ const ProviderLogos = {
     />
   ),
   microgaming: () => (
-    <span className="text-xs font-bold text-white">Micro Gaming</span>
+    <img 
+      src="/assets/providers/microgaming.png" 
+      alt="Micro Gaming" 
+      className="h-8 w-auto object-contain"
+    />
   ),
   fachai: () => (
     <span className="text-xs font-bold text-white">FA CHAI</span>
