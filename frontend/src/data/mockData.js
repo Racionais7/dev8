@@ -2669,13 +2669,12 @@ export const providersByPlatform = {
     { id: 'microgaming', name: 'Micro Gaming', rank: 4 },
     { id: 'fachai', name: 'FA CHAI Gaming', rank: 5 }
   ],
-  // Outras plataformas (YG, DG, MG, EG, HG, FG) com PG, PP e providers antigos
+  // Outras plataformas (YG, DG, MG, EG, HG, FG) - PP usa jogos Pragmatic antigos
   DEFAULT: [
     { id: 'pg', name: 'PG', rank: 1 },
     { id: 'pp', name: 'PP', rank: 2 },
-    { id: 'pragmatic', name: 'Pragmatic Play', rank: 3 },
-    { id: 'tada', name: 'Tada Gaming', rank: 4 },
-    { id: 'spirit', name: 'Spirit Gaming', rank: 5 }
+    { id: 'tada', name: 'Tada Gaming', rank: 3 },
+    { id: 'spirit', name: 'Spirit Gaming', rank: 4 }
   ]
 };
 
