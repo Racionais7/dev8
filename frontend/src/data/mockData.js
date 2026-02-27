@@ -85,7 +85,7 @@ const PG_NEW_ORDER = [
   "Zombie Outbreak"
 ];
 
-// PG SOFT GAMES - Novo ranking para AG, BG, WG (28 jogos com NOMES EM INGLÊS)
+// PG SOFT GAMES - Ranking de 50 jogos para AG, BG, WG
 const pgNewGamesData = {
   "Fortune Tiger": {
     id: 1,
@@ -114,9 +114,9 @@ const pgNewGamesData = {
     category: "Fortune",
     provider: "pg"
   },
-  "Fortune Dragon": {
+  "Dragão da Fortuna": {
     id: 4,
-    name: "Fortune Dragon",
+    name: "Dragão da Fortuna",
     image: "/images/pg-new/Dragão da Fortuna.png",
     bets: ["R$ 0,50", "R$ 3,50", "R$ 4,00"],
     basePayout: 88,
@@ -132,9 +132,9 @@ const pgNewGamesData = {
     category: "Party",
     provider: "pg"
   },
-  "Fortune Snake": {
+  "Cobra da Fortuna": {
     id: 6,
-    name: "Fortune Snake",
+    name: "Cobra da Fortuna",
     image: "/images/pg-new/Cobra da Fortuna.png",
     bets: ["R$ 0,40", "R$ 3,60", "R$ 4,00"],
     basePayout: 85,
@@ -177,9 +177,9 @@ const pgNewGamesData = {
     category: "Money",
     provider: "pg"
   },
-  "Dragon Treasure": {
+  "Missão do Tesouro do Dragão": {
     id: 11,
-    name: "Dragon Treasure",
+    name: "Missão do Tesouro do Dragão",
     image: "/images/pg-new/Missão do Tesouro do Dragão.png",
     bets: ["R$ 0,50", "R$ 2,50", "R$ 4,00"],
     basePayout: 89,
@@ -195,9 +195,9 @@ const pgNewGamesData = {
     category: "Western",
     provider: "pg"
   },
-  "Wild Ape": {
+  "Wild Ape#3258": {
     id: 13,
-    name: "Wild Ape",
+    name: "Wild Ape#3258",
     image: "/images/pg-new/Wild Ape.png",
     bets: ["R$ 0,50", "R$ 2,00", "R$ 4,00"],
     basePayout: 84,
@@ -231,18 +231,18 @@ const pgNewGamesData = {
     category: "Hindu",
     provider: "pg"
   },
-  "Majestic Kingdom": {
+  "Império Majestoso": {
     id: 17,
-    name: "Majestic Kingdom",
+    name: "Império Majestoso",
     image: "/images/pg-new/Império Majestoso.png",
     bets: ["R$ 0,50", "R$ 3,00", "R$ 4,00"],
     basePayout: 86,
     category: "Kingdom",
     provider: "pg"
   },
-  "Double Fortune": {
+  "Dupla Fortuna": {
     id: 18,
-    name: "Double Fortune",
+    name: "Dupla Fortuna",
     image: "/images/pg-new/Dupla Fortuna.png",
     bets: ["R$ 0,50", "R$ 1,50", "R$ 3,00"],
     basePayout: 84,
@@ -294,27 +294,27 @@ const pgNewGamesData = {
     category: "Fantasy",
     provider: "pg"
   },
-  "Kraken's Gold": {
+  "Frenesi do Ouro do Kraken": {
     id: 24,
-    name: "Kraken's Gold",
+    name: "Frenesi do Ouro do Kraken",
     image: "/images/pg-new/Frenesi do Ouro do Kraken.png",
     bets: ["R$ 0,50", "R$ 3,00", "R$ 4,00"],
     basePayout: 86,
     category: "Sea",
     provider: "pg"
   },
-  "Grimm's Rewards": {
+  "Recompensa dos Grimm: Hansel e Gretel": {
     id: 25,
-    name: "Grimm's Rewards",
+    name: "Recompensa dos Grimm: Hansel e Gretel",
     image: "/images/pg-new/Recompensa dos Grimm Hansel e Gretel.png",
     bets: ["R$ 0,50", "R$ 2,00", "R$ 4,00"],
     basePayout: 84,
     category: "Fantasy",
     provider: "pg"
   },
-  "Football Fever": {
+  "Futebol Fever": {
     id: 26,
-    name: "Football Fever",
+    name: "Futebol Fever",
     image: "/images/pg-new/Futebol Fever.png",
     bets: ["R$ 0,50", "R$ 2,50", "R$ 4,00"],
     basePayout: 83,
@@ -337,6 +337,204 @@ const pgNewGamesData = {
     bets: ["R$ 0,50", "R$ 2,00", "R$ 4,00"],
     basePayout: 83,
     category: "Party",
+    provider: "pg"
+  },
+  "Realeza do Faraó": {
+    id: 29,
+    name: "Realeza do Faraó",
+    image: "/images/pg-new/Realeza do Faraó.png",
+    bets: ["R$ 0,50", "R$ 2,50", "R$ 4,00"],
+    basePayout: 86,
+    category: "Egyptian",
+    provider: "pg"
+  },
+  "Ultimate Striker": {
+    id: 30,
+    name: "Ultimate Striker",
+    image: "/images/pg-new/Ultimate Striker.png",
+    bets: ["R$ 0,50", "R$ 2,00", "R$ 4,00"],
+    basePayout: 84,
+    category: "Sports",
+    provider: "pg"
+  },
+  "Caos da Máfia": {
+    id: 31,
+    name: "Caos da Máfia",
+    image: "/images/pg-new/Caos da Máfia.png",
+    bets: ["R$ 0,50", "R$ 2,50", "R$ 4,00"],
+    basePayout: 87,
+    category: "Crime",
+    provider: "pg"
+  },
+  "Wings of Iguazu": {
+    id: 32,
+    name: "Wings of Iguazu",
+    image: "/images/pg-new/Wings of Iguazu.png",
+    bets: ["R$ 0,50", "R$ 2,00", "R$ 4,00"],
+    basePayout: 85,
+    category: "Nature",
+    provider: "pg"
+  },
+  "Riquezas Nocauteadoras": {
+    id: 33,
+    name: "Riquezas Nocauteadoras",
+    image: "/images/pg-new/Riquezas Nocauteadoras.png",
+    bets: ["R$ 0,50", "R$ 2,50", "R$ 4,00"],
+    basePayout: 86,
+    category: "Sports",
+    provider: "pg"
+  },
+  "Raider Jane's Crypt of Fortune": {
+    id: 34,
+    name: "Raider Jane's Crypt of Fortune",
+    image: "/images/pg-new/Raider Jane's Crypt of Fortune.png",
+    bets: ["R$ 0,50", "R$ 2,00", "R$ 4,00"],
+    basePayout: 88,
+    category: "Adventure",
+    provider: "pg"
+  },
+  "Circus Delight": {
+    id: 35,
+    name: "Circus Delight",
+    image: "/images/pg-new/Circus Delight.png",
+    bets: ["R$ 0,50", "R$ 2,50", "R$ 4,00"],
+    basePayout: 84,
+    category: "Fun",
+    provider: "pg"
+  },
+  "Yakuza Honor": {
+    id: 36,
+    name: "Yakuza Honor",
+    image: "/images/pg-new/Yakuza Honor.png",
+    bets: ["R$ 0,50", "R$ 2,00", "R$ 4,00"],
+    basePayout: 87,
+    category: "Crime",
+    provider: "pg"
+  },
+  "Crypto Gold": {
+    id: 37,
+    name: "Crypto Gold",
+    image: "/images/pg-new/Crypto Gold.png",
+    bets: ["R$ 0,50", "R$ 2,50", "R$ 4,00"],
+    basePayout: 85,
+    category: "Money",
+    provider: "pg"
+  },
+  "Queen of Bounty": {
+    id: 38,
+    name: "Queen of Bounty",
+    image: "/images/pg-new/Queen of Bounty.png",
+    bets: ["R$ 0,50", "R$ 2,00", "R$ 4,00"],
+    basePayout: 86,
+    category: "Adventure",
+    provider: "pg"
+  },
+  "Lucky Piggy": {
+    id: 39,
+    name: "Lucky Piggy",
+    image: "/images/pg-new/Lucky Piggy.png",
+    bets: ["R$ 0,50", "R$ 2,50", "R$ 4,00"],
+    basePayout: 83,
+    category: "Fortune",
+    provider: "pg"
+  },
+  "Mineiro Galáctico": {
+    id: 40,
+    name: "Mineiro Galáctico",
+    image: "/images/pg-new/Mineiro Galáctico.png",
+    bets: ["R$ 0,50", "R$ 2,00", "R$ 4,00"],
+    basePayout: 88,
+    category: "Space",
+    provider: "pg"
+  },
+  "Asgardian Rising": {
+    id: 41,
+    name: "Asgardian Rising",
+    image: "/images/pg-new/Asgardian Rising.png",
+    bets: ["R$ 0,50", "R$ 2,50", "R$ 4,00"],
+    basePayout: 87,
+    category: "Mythical",
+    provider: "pg"
+  },
+  "Chocolate do Amor": {
+    id: 42,
+    name: "Chocolate do Amor",
+    image: "/images/pg-new/Chocolate do Amor.png",
+    bets: ["R$ 0,50", "R$ 2,00", "R$ 4,00"],
+    basePayout: 84,
+    category: "Romance",
+    provider: "pg"
+  },
+  "Caishen Wins": {
+    id: 43,
+    name: "Caishen Wins",
+    image: "/images/pg-new/Caishen Wins.png",
+    bets: ["R$ 0,50", "R$ 2,50", "R$ 4,00"],
+    basePayout: 86,
+    category: "Fortune",
+    provider: "pg"
+  },
+  "Fúria do Fim do Mundo": {
+    id: 44,
+    name: "Fúria do Fim do Mundo",
+    image: "/images/pg-new/Fúria do Fim do Mundo.png",
+    bets: ["R$ 0,50", "R$ 2,00", "R$ 4,00"],
+    basePayout: 89,
+    category: "Action",
+    provider: "pg"
+  },
+  "Gemstones Gold": {
+    id: 45,
+    name: "Gemstones Gold",
+    image: "/images/pg-new/Gemstones Gold.png",
+    bets: ["R$ 0,50", "R$ 2,50", "R$ 4,00"],
+    basePayout: 85,
+    category: "Gems",
+    provider: "pg"
+  },
+  "Ganesha Fortune": {
+    id: 46,
+    name: "Ganesha Fortune",
+    image: "/images/pg-new/Ganesha Fortune.png",
+    bets: ["R$ 0,50", "R$ 2,00", "R$ 4,00"],
+    basePayout: 87,
+    category: "Hindu",
+    provider: "pg"
+  },
+  "Shaolin Soccer": {
+    id: 47,
+    name: "Shaolin Soccer",
+    image: "/images/pg-new/Shaolin Soccer.png",
+    bets: ["R$ 0,50", "R$ 2,50", "R$ 4,00"],
+    basePayout: 84,
+    category: "Sports",
+    provider: "pg"
+  },
+  "Songkran Splash": {
+    id: 48,
+    name: "Songkran Splash",
+    image: "/images/pg-new/Songkran Splash.png",
+    bets: ["R$ 0,50", "R$ 2,00", "R$ 4,00"],
+    basePayout: 86,
+    category: "Party",
+    provider: "pg"
+  },
+  "Ways of Qilin": {
+    id: 49,
+    name: "Ways of Qilin",
+    image: "/images/pg-new/Ways of Qilin.png",
+    bets: ["R$ 0,50", "R$ 2,50", "R$ 4,00"],
+    basePayout: 88,
+    category: "Mythical",
+    provider: "pg"
+  },
+  "Zombie Outbreak": {
+    id: 50,
+    name: "Zombie Outbreak",
+    image: "/images/pg-new/Zombie Outbreak.png",
+    bets: ["R$ 0,50", "R$ 2,00", "R$ 4,00"],
+    basePayout: 85,
+    category: "Horror",
     provider: "pg"
   }
 };
