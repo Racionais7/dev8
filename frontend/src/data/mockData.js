@@ -2574,27 +2574,30 @@ const oldPlatformGames = {
 
 // Dados exportados por plataforma
 export const slotsDataByPlatform = {
-  // AG, BG, WG têm TODOS os providers: PG, PP, Amigo, Micro Gaming, FA CHAI
+  // AG, BG, WG têm TODOS os providers: PG, PP, Amigo, Micro Gaming, FA CHAI, Revenge
   AGJOGO: {
     pg: newPlatformGames,
     pp: newPPGames,
     amigo: newAmigoGames,
     microgaming: newMicroGames,
-    fachai: newFachaiGames
+    fachai: newFachaiGames,
+    revenge: []
   },
   BGJOGO: {
     pg: newPlatformGames,
     pp: newPPGames,
     amigo: newAmigoGames,
     microgaming: newMicroGames,
-    fachai: newFachaiGames
+    fachai: newFachaiGames,
+    revenge: []
   },
   WGJOGO: {
     pg: newPlatformGames,
     pp: newPPGames,
     amigo: newAmigoGames,
     microgaming: newMicroGames,
-    fachai: newFachaiGames
+    fachai: newFachaiGames,
+    revenge: []
   },
   // YG, DG, MG, EG, HG, FG NÃO têm Amigo, Micro Gaming nem FA CHAI
   // PP usa os jogos Pragmatic Play antigos
