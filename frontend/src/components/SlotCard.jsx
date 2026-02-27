@@ -131,6 +131,13 @@ const SlotCard = ({ slot, onSelect, isSelected }) => {
           className="relative overflow-hidden"
           style={{ aspectRatio: '4/5' }}
         >
+          {/* Image enhancement layer */}
+          <div 
+            className="absolute inset-0 z-[1] pointer-events-none mix-blend-overlay opacity-20"
+            style={{
+              background: 'linear-gradient(135deg, rgba(255,255,255,0.1) 0%, transparent 50%, rgba(0,0,0,0.1) 100%)'
+            }}
+          />
           <img 
             src={slot.image} 
             alt={slot.name} 
