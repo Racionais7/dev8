@@ -344,7 +344,6 @@ const PP_NEW_ORDER = [
   "Bigger Bass Bonanza",
   "Joker's Jewels",
   "Zombie Carnival",
-  "The Magic Cauldron",
   "Bigger Bass Splash",
   "Bounty Hunter",
   "Candy Stars",
