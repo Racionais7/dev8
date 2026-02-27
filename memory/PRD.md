@@ -22,6 +22,16 @@ Site de sinais premium para slots de cassino online com suporte a 9 plataformas 
 - **Lógica de plataformas:** AG/BG/WG usam jogos novos; outras usam jogos antigos
 - **Taxa de acerto:** 80-99% (ajustada para ser mais realista)
 
+## Provedores de Jogos (TODOS ATUALIZADOS)
+| Provedor | Jogos | Nomes |
+|----------|-------|-------|
+| PG Soft | 50 | Português ✅ |
+| PP (Pragmatic Play) | 50 | Português ✅ |
+| Amigo Gaming | 50 | Português ✅ |
+| Microgaming | 50 | Português ✅ |
+| FA CHAI Gaming | 50 | Português ✅ |
+| Revenge | 0 | Aguardando lista |
+
 ## Tech Stack
 - Frontend: React 19 + TailwindCSS + Radix UI
 - Build: CRACO (Create React App Configuration Override)
@@ -29,12 +39,16 @@ Site de sinais premium para slots de cassino online com suporte a 9 plataformas 
 
 ## Bugs Corrigidos
 - [x] 27/02/2026 - Corrigido bug onde "Revenge" aparecia como provedor abaixo de todos os jogos
+- [x] 27/02/2026 - Atualizados TODOS os nomes de jogos para português (250 jogos)
 
 ## Próximas Ações
-- [ ] Definir nomes finais dos jogos (aguardando confirmação do usuário)
 - [ ] Adicionar jogos ao provedor "Revenge" (aguardando lista do usuário)
-- [ ] Integração com APIs de sinais reais
-- [ ] Sistema de autenticação de usuários
+- [ ] Decidir se vai manter ou remover o provedor Revenge
+
+## Backlog
+- Sistema de autenticação de usuários
+- Integração com APIs de sinais reais
+- Dashboard de administração
 
 ## Último Update
-27/02/2026 - Corrigido bug do nome "Revenge" aparecendo em todos os jogos
+27/02/2026 - Atualizados os nomes de todos os 250 jogos (PG, PP, Amigo, Microgaming, FA CHAI) para português
