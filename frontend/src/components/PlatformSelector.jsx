@@ -8,8 +8,9 @@ const gameProviders = [
   { name: 'Amigo', fullName: 'Amigo Gaming', color: '#FF6B35', logo: '/assets/providers/amigo.png' },
   { name: 'Micro', fullName: 'Micro Gaming', color: '#00D4AA', logo: '/assets/providers/microgaming.png' },
   { name: 'FACHAI', fullName: 'FA CHAI Gaming', color: '#FFD700', logo: '/assets/providers/fachai.png' },
-  { name: 'Spirit', fullName: 'Spirit Gaming', color: '#8B5CF6', logo: '/providers/spirit.png' },
-  { name: 'Tada', fullName: 'Tada Gaming', color: '#EC4899', logo: '/providers/tada.png' }
+  { name: 'Spirit', fullName: 'Spirit Gaming', color: '#8B5CF6', logo: '/assets/providers/spirit.jpg' },
+  { name: 'Tada', fullName: 'Tada Gaming', color: '#EC4899', logo: '/assets/providers/tada.png' },
+  { name: 'Revenge', fullName: 'Revenge', color: '#10B981', logo: '/assets/providers/revenge.png' }
 ];
 
 // Platform logos - orbitLogo for the spinning wheel, logo for the selection grid
