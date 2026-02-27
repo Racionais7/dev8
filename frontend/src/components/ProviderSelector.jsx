@@ -75,9 +75,7 @@ const PragmaticLogo = ({ className = "h-5" }) => (
 const ProviderLogos = {
   pg: () => <PGSoftLogo className="h-5 w-auto" />,
   pragmatic: () => <PragmaticLogo className="h-6 w-auto" />,
-  pp: () => (
-    <span className="text-sm font-bold text-white tracking-wide">PP</span>
-  ),
+  pp: () => <PragmaticLogo className="h-6 w-auto" />,
   amigo: () => (
     <img 
       src="/assets/providers/amigo.png" 
