@@ -73,16 +73,24 @@ const SlotCard = ({ slot, onSelect, isSelected }) => {
     return () => clearInterval(interval);
   }, [slot.basePayout]);
 
-  // Provider display - use logo for PG Soft and Pragmatic
+  // Provider display - use logo for PG Soft and Pragmatic, text for others
   const renderProviderName = () => {
     if (slot.provider === 'pg') {
       return <PGSoftLogoSmall className="h-3 w-auto opacity-60" />;
     }
-    if (slot.provider === 'pragmatic') {
+    if (slot.provider === 'pragmatic' || slot.provider === 'pp') {
       return <PragmaticLogoSmall className="h-3.5 w-auto opacity-60" />;
     }
-    const name = slot.provider === 'tada' ? 'Tada' :
-                 slot.provider === 'spirit' ? 'Spirit' : 'Revenge';
+    // Map provider codes to display names
+    const providerNames = {
+      'tada': 'Tada',
+      'spirit': 'Spirit',
+      'amigo': 'Amigo Gaming',
+      'microgaming': 'Microgaming',
+      'fachai': 'FA CHAI',
+      'revenge': 'Revenge'
+    };
+    const name = providerNames[slot.provider] || slot.provider;
     return <span className="text-[10px] text-gray-500 tracking-wider">{name}</span>;
   };
 
