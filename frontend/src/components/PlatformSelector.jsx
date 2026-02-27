@@ -3,8 +3,8 @@ import { platformImage } from '../data/mockData';
 
 // Data
 const gameProviders = [
-  { name: 'PG', fullName: 'PG Soft', color: '#F59E0B', logo: '/providers/pg-soft.png' },
-  { name: 'PP', fullName: 'Pragmatic Play', color: '#3B82F6', logo: '/providers/pragmatic-play.png' },
+  { name: 'PG', fullName: 'PG Soft', color: '#F59E0B', logo: '/assets/providers/pg-soft.png' },
+  { name: 'PP', fullName: 'Pragmatic Play', color: '#3B82F6', logo: '/assets/providers/pragmatic-play.png' },
   { name: 'Amigo', fullName: 'Amigo Gaming', color: '#FF6B35', logo: '/assets/providers/amigo.png' },
   { name: 'Micro', fullName: 'Micro Gaming', color: '#00D4AA', logo: '/assets/providers/microgaming.png' },
   { name: 'FACHAI', fullName: 'FA CHAI Gaming', color: '#FFD700', logo: '/assets/providers/fachai.png' },
