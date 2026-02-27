@@ -817,7 +817,7 @@ const ppNewGamesData = {
   "Mestre de Feitiços": {
     id: 125,
     name: "Mestre de Feitiços",
-    image: "/images/pp-new/Mestre de Feitiços.png",
+    image: "/images/pp-new/Mestre_de_Feiticos.png",
     bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"],
     basePayout: 87,
     category: "Fantasy",
