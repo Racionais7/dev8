@@ -553,15 +553,6 @@ const ppNewGamesData = {
     category: "Horror",
     provider: "pp"
   },
-  "The Magic Cauldron": {
-    id: 121,
-    name: "The Magic Cauldron",
-    image: "/images/pp-new/Mestre de Feitiços.png",
-    bets: ["R$ 0,20", "R$ 0,50", "R$ 1,00"],
-    basePayout: 85,
-    category: "Fantasy",
-    provider: "pp"
-  },
   "Bigger Bass Splash": {
     id: 122,
     name: "Bigger Bass Splash",
