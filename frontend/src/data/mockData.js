@@ -2602,37 +2602,43 @@ export const slotsDataByPlatform = {
     pg: newPlatformGames,
     pp: oldPlatformGames.pragmatic,
     spirit: oldPlatformGames.spirit,
-    tada: oldPlatformGames.tada
+    tada: oldPlatformGames.tada,
+    revenge: []
   },
   DGJOGO: {
     pg: newPlatformGames,
     pp: oldPlatformGames.pragmatic,
     spirit: oldPlatformGames.spirit,
-    tada: oldPlatformGames.tada
+    tada: oldPlatformGames.tada,
+    revenge: []
   },
   MGJOGO: {
     pg: newPlatformGames,
     pp: oldPlatformGames.pragmatic,
     spirit: oldPlatformGames.spirit,
-    tada: oldPlatformGames.tada
+    tada: oldPlatformGames.tada,
+    revenge: []
   },
   EGJOGO: {
     pg: newPlatformGames,
     pp: oldPlatformGames.pragmatic,
     spirit: oldPlatformGames.spirit,
-    tada: oldPlatformGames.tada
+    tada: oldPlatformGames.tada,
+    revenge: []
   },
   HGJOGO: {
     pg: newPlatformGames,
     pp: oldPlatformGames.pragmatic,
     spirit: oldPlatformGames.spirit,
-    tada: oldPlatformGames.tada
+    tada: oldPlatformGames.tada,
+    revenge: []
   },
   FGJOGO: {
     pg: newPlatformGames,
     pp: oldPlatformGames.pragmatic,
     spirit: oldPlatformGames.spirit,
-    tada: oldPlatformGames.tada
+    tada: oldPlatformGames.tada,
+    revenge: []
   }
 };
 
