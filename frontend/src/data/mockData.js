@@ -2662,28 +2662,32 @@ export const providersByPlatform = {
     { id: 'pp', name: 'PP', rank: 2 },
     { id: 'amigo', name: 'Amigo Gaming', rank: 3 },
     { id: 'microgaming', name: 'Micro Gaming', rank: 4 },
-    { id: 'fachai', name: 'FA CHAI Gaming', rank: 5 }
+    { id: 'fachai', name: 'FA CHAI Gaming', rank: 5 },
+    { id: 'revenge', name: 'Revenge', rank: 6 }
   ],
   BGJOGO: [
     { id: 'pg', name: 'PG', rank: 1 },
     { id: 'pp', name: 'PP', rank: 2 },
     { id: 'amigo', name: 'Amigo Gaming', rank: 3 },
     { id: 'microgaming', name: 'Micro Gaming', rank: 4 },
-    { id: 'fachai', name: 'FA CHAI Gaming', rank: 5 }
+    { id: 'fachai', name: 'FA CHAI Gaming', rank: 5 },
+    { id: 'revenge', name: 'Revenge', rank: 6 }
   ],
   WGJOGO: [
     { id: 'pg', name: 'PG', rank: 1 },
     { id: 'pp', name: 'PP', rank: 2 },
     { id: 'amigo', name: 'Amigo Gaming', rank: 3 },
     { id: 'microgaming', name: 'Micro Gaming', rank: 4 },
-    { id: 'fachai', name: 'FA CHAI Gaming', rank: 5 }
+    { id: 'fachai', name: 'FA CHAI Gaming', rank: 5 },
+    { id: 'revenge', name: 'Revenge', rank: 6 }
   ],
   // Outras plataformas (YG, DG, MG, EG, HG, FG) - PP usa jogos Pragmatic antigos
   DEFAULT: [
     { id: 'pg', name: 'PG', rank: 1 },
     { id: 'pp', name: 'PP', rank: 2 },
     { id: 'tada', name: 'Tada Gaming', rank: 3 },
-    { id: 'spirit', name: 'Spirit Gaming', rank: 4 }
+    { id: 'spirit', name: 'Spirit Gaming', rank: 4 },
+    { id: 'revenge', name: 'Revenge', rank: 5 }
   ]
 };
 
@@ -2692,7 +2696,8 @@ export const providerRankingOrder = [
   { id: 'pg', name: 'PG', rank: 1 },
   { id: 'pp', name: 'PP', rank: 2 },
   { id: 'tada', name: 'Tada Gaming', rank: 3 },
-  { id: 'spirit', name: 'Spirit Gaming', rank: 4 }
+  { id: 'spirit', name: 'Spirit Gaming', rank: 4 },
+  { id: 'revenge', name: 'Revenge', rank: 5 }
 ];
 
 // Função para gerar payout dinâmico
