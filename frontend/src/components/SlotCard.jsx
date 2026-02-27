@@ -137,8 +137,10 @@ const SlotCard = ({ slot, onSelect, isSelected }) => {
             className="w-full h-full object-cover transition-all duration-700 ease-out"
             style={{
               transform: isHovered ? 'scale(1.06)' : 'scale(1)',
-              filter: isHovered ? 'brightness(1.03)' : 'brightness(1)',
-              imageRendering: 'auto',
+              filter: isHovered 
+                ? 'brightness(1.08) contrast(1.1) saturate(1.15)' 
+                : 'brightness(1.02) contrast(1.08) saturate(1.1)',
+              imageRendering: 'crisp-edges',
               WebkitBackfaceVisibility: 'hidden',
               backfaceVisibility: 'hidden'
             }}
