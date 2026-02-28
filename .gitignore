@@ -34,13 +34,6 @@ venv/
 # ZIP files
 *.zip
 
-# Emergent (internal)
+# Emergent
 .emergent/
--e 
-# Environment files
-*.env
-*.env.*
--e 
-# Environment files
-*.env
-*.env.*
+memory/
