@@ -2931,14 +2931,11 @@ export const providersByPlatform = {
     { id: 'fachai', name: 'FA CHAI Gaming', rank: 5 },
     { id: 'revenge', name: 'Revenge', rank: 6 }
   ],
-  // Todas as plataformas agora têm os mesmos provedores
+  // Outras plataformas (YG, DG, MG, EG, HG, FG) - Só PG, PP e Revenge
   DEFAULT: [
     { id: 'pg', name: 'PG', rank: 1 },
     { id: 'pp', name: 'PP', rank: 2 },
-    { id: 'amigo', name: 'Amigo Gaming', rank: 3 },
-    { id: 'microgaming', name: 'Micro Gaming', rank: 4 },
-    { id: 'fachai', name: 'FA CHAI Gaming', rank: 5 },
-    { id: 'revenge', name: 'Revenge', rank: 6 }
+    { id: 'revenge', name: 'Revenge', rank: 3 }
   ]
 };
 
