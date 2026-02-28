@@ -2945,11 +2945,13 @@ export const providersByPlatform = {
     { id: 'fachai', name: 'FA CHAI Gaming', rank: 5 },
     { id: 'revenge', name: 'Revenge', rank: 6 }
   ],
-  // Outras plataformas (YG, DG, MG, EG, HG, FG) - Só PG, PP e Revenge
+  // Outras plataformas (YG, DG, MG, EG, HG, FG) - PG, PP, Spirit, Tada e Revenge
   DEFAULT: [
     { id: 'pg', name: 'PG', rank: 1 },
     { id: 'pp', name: 'PP', rank: 2 },
-    { id: 'revenge', name: 'Revenge', rank: 3 }
+    { id: 'tada', name: 'Tada Gaming', rank: 3 },
+    { id: 'spirit', name: 'Spirit Gaming', rank: 4 },
+    { id: 'revenge', name: 'Revenge', rank: 5 }
   ]
 };
 
@@ -2957,10 +2959,9 @@ export const providersByPlatform = {
 export const providerRankingOrder = [
   { id: 'pg', name: 'PG', rank: 1 },
   { id: 'pp', name: 'PP', rank: 2 },
-  { id: 'amigo', name: 'Amigo Gaming', rank: 3 },
-  { id: 'microgaming', name: 'Micro Gaming', rank: 4 },
-  { id: 'fachai', name: 'FA CHAI Gaming', rank: 5 },
-  { id: 'revenge', name: 'Revenge', rank: 6 }
+  { id: 'tada', name: 'Tada Gaming', rank: 3 },
+  { id: 'spirit', name: 'Spirit Gaming', rank: 4 },
+  { id: 'revenge', name: 'Revenge', rank: 5 }
 ];
 
 // Função para gerar payout dinâmico
