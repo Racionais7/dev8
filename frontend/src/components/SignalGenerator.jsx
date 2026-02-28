@@ -614,7 +614,7 @@ const SignalGenerator = ({ slot, onBack, platformLink }) => {
             <h1 className="text-lg font-semibold text-white">{slot.name}</h1>
             <p className="text-sm text-gray-500">{providerName}</p>
           </div>
-          {/* Copy Game Name Button - Premium Design */}
+          {/* Copy Game Name Button - SUPER VISIBLE Premium Design */}
           <button
             onClick={async () => {
               const btn = document.getElementById('copy-name-btn');
@@ -639,51 +639,55 @@ const SignalGenerator = ({ slot, onBack, platformLink }) => {
                 iconDefault.classList.add('hidden');
                 iconSuccess.classList.remove('hidden');
                 textSpan.textContent = 'Copiado!';
-                btn.classList.remove('from-violet-600/20', 'to-purple-600/20', 'border-violet-500/30', 'hover:from-violet-600/30', 'hover:to-purple-600/30', 'hover:border-violet-500/50', 'hover:shadow-violet-500/20');
-                btn.classList.add('from-emerald-600/20', 'to-teal-600/20', 'border-emerald-500/50', 'shadow-emerald-500/20');
+                btn.style.background = 'linear-gradient(135deg, #10b981 0%, #059669 100%)';
+                btn.style.borderColor = '#34d399';
+                btn.style.boxShadow = '0 0 30px rgba(16, 185, 129, 0.5), 0 0 60px rgba(16, 185, 129, 0.3)';
                 
                 setTimeout(() => {
                   iconDefault.classList.remove('hidden');
                   iconSuccess.classList.add('hidden');
                   textSpan.textContent = 'Copiar nome';
-                  btn.classList.add('from-violet-600/20', 'to-purple-600/20', 'border-violet-500/30', 'hover:from-violet-600/30', 'hover:to-purple-600/30', 'hover:border-violet-500/50', 'hover:shadow-violet-500/20');
-                  btn.classList.remove('from-emerald-600/20', 'to-teal-600/20', 'border-emerald-500/50', 'shadow-emerald-500/20');
+                  btn.style.background = 'linear-gradient(135deg, #f59e0b 0%, #d97706 100%)';
+                  btn.style.borderColor = '#fbbf24';
+                  btn.style.boxShadow = '0 0 20px rgba(245, 158, 11, 0.4), 0 0 40px rgba(245, 158, 11, 0.2)';
                 }, 2000);
               }
             }}
             id="copy-name-btn"
             data-testid="copy-game-name-btn"
-            className="group relative flex items-center gap-2.5 px-4 py-2.5 rounded-xl text-sm font-semibold 
-                       bg-gradient-to-r from-violet-600/20 to-purple-600/20 
-                       border border-violet-500/30
-                       hover:from-violet-600/30 hover:to-purple-600/30 hover:border-violet-500/50
-                       hover:shadow-lg hover:shadow-violet-500/20
+            className="group relative flex items-center gap-3 px-6 py-3 rounded-xl text-base font-bold 
                        active:scale-95
-                       transition-all duration-300 ease-out"
+                       transition-all duration-300 ease-out
+                       animate-pulse hover:animate-none"
+            style={{
+              background: 'linear-gradient(135deg, #f59e0b 0%, #d97706 100%)',
+              border: '2px solid #fbbf24',
+              boxShadow: '0 0 20px rgba(245, 158, 11, 0.4), 0 0 40px rgba(245, 158, 11, 0.2)'
+            }}
           >
             {/* Glow effect */}
-            <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-violet-500/10 to-purple-500/10 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-amber-500/30 to-orange-500/30 blur-xl opacity-50 group-hover:opacity-100 transition-opacity duration-300" />
             
             {/* Icon container */}
-            <div className="relative w-5 h-5">
+            <div className="relative w-6 h-6">
               {/* Default copy icon */}
-              <svg id="copy-icon-default" className="w-5 h-5 text-violet-400 group-hover:text-violet-300 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+              <svg id="copy-icon-default" className="w-6 h-6 text-white drop-shadow-lg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
               </svg>
               {/* Success checkmark icon */}
-              <svg id="copy-icon-success" className="hidden w-5 h-5 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+              <svg id="copy-icon-success" className="hidden w-6 h-6 text-white drop-shadow-lg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
               </svg>
             </div>
             
             {/* Text */}
-            <span id="copy-text" className="relative text-violet-300 group-hover:text-white transition-colors">
+            <span id="copy-text" className="relative text-white font-bold text-shadow drop-shadow-lg">
               Copiar nome
             </span>
             
             {/* Shine effect on hover */}
             <div className="absolute inset-0 rounded-xl overflow-hidden">
-              <div className="absolute inset-0 translate-x-[-100%] group-hover:translate-x-[100%] bg-gradient-to-r from-transparent via-white/10 to-transparent transition-transform duration-700 ease-out" />
+              <div className="absolute inset-0 translate-x-[-100%] group-hover:translate-x-[100%] bg-gradient-to-r from-transparent via-white/30 to-transparent transition-transform duration-700 ease-out" />
             </div>
           </button>
         </div>
