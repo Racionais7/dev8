@@ -2912,7 +2912,7 @@ export const slotsDataByPlatform = {
 // Export padrão para compatibilidade
 export const slotsData = {
   pg: newPlatformGames,
-  pp: oldPlatformGames.pragmatic,
+  pp: newPPGames,
   spirit: oldPlatformGames.spirit,
   tada: oldPlatformGames.tada,
   revenge: []
