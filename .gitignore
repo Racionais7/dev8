@@ -37,3 +37,7 @@ venv/
 # Emergent
 .emergent/
 memory/
+-e 
+# Environment files
+*.env
+*.env.*
