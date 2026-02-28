@@ -639,37 +639,33 @@ const SignalGenerator = ({ slot, onBack, platformLink }) => {
                 iconDefault.classList.add('hidden');
                 iconSuccess.classList.remove('hidden');
                 textSpan.textContent = 'Copiado!';
-                btn.style.background = 'linear-gradient(135deg, #10b981 0%, #059669 100%)';
-                btn.style.borderColor = '#34d399';
-                btn.style.boxShadow = '0 0 30px rgba(16, 185, 129, 0.5), 0 0 60px rgba(16, 185, 129, 0.3)';
+                btn.classList.remove('bg-gradient-to-r', 'from-amber-500', 'to-orange-500', 'border-amber-400', 'shadow-amber-500/50');
+                btn.classList.add('bg-gradient-to-r', 'from-emerald-500', 'to-green-500', 'border-emerald-400', 'shadow-emerald-500/50');
                 
                 setTimeout(() => {
                   iconDefault.classList.remove('hidden');
                   iconSuccess.classList.add('hidden');
                   textSpan.textContent = 'Copiar nome';
-                  btn.style.background = 'linear-gradient(135deg, #f59e0b 0%, #d97706 100%)';
-                  btn.style.borderColor = '#fbbf24';
-                  btn.style.boxShadow = '0 0 20px rgba(245, 158, 11, 0.4), 0 0 40px rgba(245, 158, 11, 0.2)';
+                  btn.classList.remove('from-emerald-500', 'to-green-500', 'border-emerald-400', 'shadow-emerald-500/50');
+                  btn.classList.add('from-amber-500', 'to-orange-500', 'border-amber-400', 'shadow-amber-500/50');
                 }, 2000);
               }
             }}
             id="copy-name-btn"
             data-testid="copy-game-name-btn"
             className="group relative flex items-center gap-3 px-6 py-3 rounded-xl text-base font-bold 
+                       bg-gradient-to-r from-amber-500 to-orange-500
+                       border-2 border-amber-400
+                       shadow-lg shadow-amber-500/50
+                       hover:from-amber-400 hover:to-orange-400 hover:shadow-xl hover:shadow-amber-500/60
                        active:scale-95
-                       transition-all duration-300 ease-out
-                       animate-pulse hover:animate-none"
-            style={{
-              background: 'linear-gradient(135deg, #f59e0b 0%, #d97706 100%)',
-              border: '2px solid #fbbf24',
-              boxShadow: '0 0 20px rgba(245, 158, 11, 0.4), 0 0 40px rgba(245, 158, 11, 0.2)'
-            }}
+                       transition-all duration-300 ease-out"
           >
-            {/* Glow effect */}
-            <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-amber-500/30 to-orange-500/30 blur-xl opacity-50 group-hover:opacity-100 transition-opacity duration-300" />
+            {/* Pulsing glow effect */}
+            <div className="absolute -inset-1 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 opacity-50 blur-lg animate-pulse" />
             
             {/* Icon container */}
-            <div className="relative w-6 h-6">
+            <div className="relative w-6 h-6 z-10">
               {/* Default copy icon */}
               <svg id="copy-icon-default" className="w-6 h-6 text-white drop-shadow-lg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
@@ -681,13 +677,13 @@ const SignalGenerator = ({ slot, onBack, platformLink }) => {
             </div>
             
             {/* Text */}
-            <span id="copy-text" className="relative text-white font-bold text-shadow drop-shadow-lg">
+            <span id="copy-text" className="relative text-white font-bold z-10 drop-shadow-md">
               Copiar nome
             </span>
             
             {/* Shine effect on hover */}
-            <div className="absolute inset-0 rounded-xl overflow-hidden">
-              <div className="absolute inset-0 translate-x-[-100%] group-hover:translate-x-[100%] bg-gradient-to-r from-transparent via-white/30 to-transparent transition-transform duration-700 ease-out" />
+            <div className="absolute inset-0 rounded-xl overflow-hidden z-0">
+              <div className="absolute inset-0 translate-x-[-100%] group-hover:translate-x-[100%] bg-gradient-to-r from-transparent via-white/40 to-transparent transition-transform duration-700 ease-out" />
             </div>
           </button>
         </div>
