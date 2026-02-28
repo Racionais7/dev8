@@ -131,11 +131,18 @@ const SlotCard = ({ slot, onSelect, isSelected }) => {
           className="relative overflow-hidden"
           style={{ aspectRatio: '4/5' }}
         >
-          {/* Image enhancement layer */}
+          {/* Image enhancement layer - stronger */}
           <div 
-            className="absolute inset-0 z-[1] pointer-events-none mix-blend-overlay opacity-20"
+            className="absolute inset-0 z-[1] pointer-events-none mix-blend-overlay opacity-25"
             style={{
-              background: 'linear-gradient(135deg, rgba(255,255,255,0.1) 0%, transparent 50%, rgba(0,0,0,0.1) 100%)'
+              background: 'linear-gradient(135deg, rgba(255,255,255,0.15) 0%, transparent 40%, rgba(0,0,0,0.1) 100%)'
+            }}
+          />
+          {/* Sharpening overlay */}
+          <div 
+            className="absolute inset-0 z-[2] pointer-events-none mix-blend-soft-light opacity-30"
+            style={{
+              background: 'radial-gradient(circle at center, rgba(255,255,255,0.1) 0%, transparent 70%)'
             }}
           />
           <img 
@@ -145,9 +152,9 @@ const SlotCard = ({ slot, onSelect, isSelected }) => {
             style={{
               transform: isHovered ? 'scale(1.06)' : 'scale(1)',
               filter: isHovered 
-                ? 'brightness(1.08) contrast(1.1) saturate(1.15)' 
-                : 'brightness(1.02) contrast(1.08) saturate(1.1)',
-              imageRendering: 'crisp-edges',
+                ? 'brightness(1.12) contrast(1.18) saturate(1.25) drop-shadow(0 2px 4px rgba(0,0,0,0.3))' 
+                : 'brightness(1.05) contrast(1.15) saturate(1.2)',
+              imageRendering: 'auto',
               WebkitBackfaceVisibility: 'hidden',
               backfaceVisibility: 'hidden'
             }}
