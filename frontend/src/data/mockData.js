@@ -2864,53 +2864,35 @@ export const slotsDataByPlatform = {
     fachai: newFachaiGames,
     revenge: []
   },
-  // YG, DG, MG, EG, HG, FG - Agora com TODOS os provedores
+  // YG, DG, MG, EG, HG, FG - Só PG, PP e Revenge
   YGJOGO: {
     pg: newPlatformGames,
     pp: newPPGames,
-    amigo: newAmigoGames,
-    microgaming: newMicroGames,
-    fachai: newFachaiGames,
     revenge: []
   },
   DGJOGO: {
     pg: newPlatformGames,
     pp: newPPGames,
-    amigo: newAmigoGames,
-    microgaming: newMicroGames,
-    fachai: newFachaiGames,
     revenge: []
   },
   MGJOGO: {
     pg: newPlatformGames,
     pp: newPPGames,
-    amigo: newAmigoGames,
-    microgaming: newMicroGames,
-    fachai: newFachaiGames,
     revenge: []
   },
   EGJOGO: {
     pg: newPlatformGames,
     pp: newPPGames,
-    amigo: newAmigoGames,
-    microgaming: newMicroGames,
-    fachai: newFachaiGames,
     revenge: []
   },
   HGJOGO: {
     pg: newPlatformGames,
     pp: newPPGames,
-    amigo: newAmigoGames,
-    microgaming: newMicroGames,
-    fachai: newFachaiGames,
     revenge: []
   },
   FGJOGO: {
     pg: newPlatformGames,
     pp: newPPGames,
-    amigo: newAmigoGames,
-    microgaming: newMicroGames,
-    fachai: newFachaiGames,
     revenge: []
   }
 };
@@ -2919,9 +2901,6 @@ export const slotsDataByPlatform = {
 export const slotsData = {
   pg: newPlatformGames,
   pp: newPPGames,
-  amigo: newAmigoGames,
-  microgaming: newMicroGames,
-  fachai: newFachaiGames,
   revenge: []
 };
 
