@@ -2864,35 +2864,47 @@ export const slotsDataByPlatform = {
     fachai: newFachaiGames,
     revenge: []
   },
-  // YG, DG, MG, EG, HG, FG - Só PG, PP e Revenge
+  // YG, DG, MG, EG, HG, FG - PG, PP, Spirit, Tada e Revenge
   YGJOGO: {
     pg: newPlatformGames,
     pp: newPPGames,
+    spirit: oldPlatformGames.spirit,
+    tada: oldPlatformGames.tada,
     revenge: []
   },
   DGJOGO: {
     pg: newPlatformGames,
     pp: newPPGames,
+    spirit: oldPlatformGames.spirit,
+    tada: oldPlatformGames.tada,
     revenge: []
   },
   MGJOGO: {
     pg: newPlatformGames,
     pp: newPPGames,
+    spirit: oldPlatformGames.spirit,
+    tada: oldPlatformGames.tada,
     revenge: []
   },
   EGJOGO: {
     pg: newPlatformGames,
     pp: newPPGames,
+    spirit: oldPlatformGames.spirit,
+    tada: oldPlatformGames.tada,
     revenge: []
   },
   HGJOGO: {
     pg: newPlatformGames,
     pp: newPPGames,
+    spirit: oldPlatformGames.spirit,
+    tada: oldPlatformGames.tada,
     revenge: []
   },
   FGJOGO: {
     pg: newPlatformGames,
     pp: newPPGames,
+    spirit: oldPlatformGames.spirit,
+    tada: oldPlatformGames.tada,
     revenge: []
   }
 };
@@ -2901,6 +2913,8 @@ export const slotsDataByPlatform = {
 export const slotsData = {
   pg: newPlatformGames,
   pp: newPPGames,
+  spirit: oldPlatformGames.spirit,
+  tada: oldPlatformGames.tada,
   revenge: []
 };
 
