@@ -2839,13 +2839,14 @@ const oldPlatformGames = {
 
 // Dados exportados por plataforma
 export const slotsDataByPlatform = {
-  // AG, BG, WG têm TODOS os providers: PG, PP, Amigo, Micro Gaming, FA CHAI, Revenge
+  // AG, BG, WG têm TODOS os providers: PG, PP, Amigo, Micro Gaming, FA CHAI, Tada, Revenge
   AGJOGO: {
     pg: newPlatformGames,
     pp: newPPGames,
     amigo: newAmigoGames,
     microgaming: newMicroGames,
     fachai: newFachaiGames,
+    tada: oldPlatformGames.tada,
     revenge: []
   },
   BGJOGO: {
@@ -2854,6 +2855,7 @@ export const slotsDataByPlatform = {
     amigo: newAmigoGames,
     microgaming: newMicroGames,
     fachai: newFachaiGames,
+    tada: oldPlatformGames.tada,
     revenge: []
   },
   WGJOGO: {
@@ -2862,6 +2864,7 @@ export const slotsDataByPlatform = {
     amigo: newAmigoGames,
     microgaming: newMicroGames,
     fachai: newFachaiGames,
+    tada: oldPlatformGames.tada,
     revenge: []
   },
   // YG, DG, MG, EG, HG, FG - PG, PP, Spirit, Tada e Revenge
