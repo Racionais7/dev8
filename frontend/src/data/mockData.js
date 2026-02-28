@@ -2923,14 +2923,15 @@ export const slotsData = {
 
 // Provider ranking por plataforma
 export const providersByPlatform = {
-  // AG, BG, WG têm novos providers
+  // AG, BG, WG têm novos providers + Tada
   AGJOGO: [
     { id: 'pg', name: 'PG', rank: 1 },
     { id: 'pp', name: 'PP', rank: 2 },
     { id: 'amigo', name: 'Amigo Gaming', rank: 3 },
     { id: 'microgaming', name: 'Micro Gaming', rank: 4 },
     { id: 'fachai', name: 'FA CHAI Gaming', rank: 5 },
-    { id: 'revenge', name: 'Revenge', rank: 6 }
+    { id: 'tada', name: 'Tada Gaming', rank: 6 },
+    { id: 'revenge', name: 'Revenge', rank: 7 }
   ],
   BGJOGO: [
     { id: 'pg', name: 'PG', rank: 1 },
@@ -2938,7 +2939,8 @@ export const providersByPlatform = {
     { id: 'amigo', name: 'Amigo Gaming', rank: 3 },
     { id: 'microgaming', name: 'Micro Gaming', rank: 4 },
     { id: 'fachai', name: 'FA CHAI Gaming', rank: 5 },
-    { id: 'revenge', name: 'Revenge', rank: 6 }
+    { id: 'tada', name: 'Tada Gaming', rank: 6 },
+    { id: 'revenge', name: 'Revenge', rank: 7 }
   ],
   WGJOGO: [
     { id: 'pg', name: 'PG', rank: 1 },
@@ -2946,7 +2948,8 @@ export const providersByPlatform = {
     { id: 'amigo', name: 'Amigo Gaming', rank: 3 },
     { id: 'microgaming', name: 'Micro Gaming', rank: 4 },
     { id: 'fachai', name: 'FA CHAI Gaming', rank: 5 },
-    { id: 'revenge', name: 'Revenge', rank: 6 }
+    { id: 'tada', name: 'Tada Gaming', rank: 6 },
+    { id: 'revenge', name: 'Revenge', rank: 7 }
   ],
   // Outras plataformas (YG, DG, MG, EG, HG, FG) - PG, PP, Spirit, Tada e Revenge
   DEFAULT: [
