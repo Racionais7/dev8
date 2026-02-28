@@ -2864,47 +2864,53 @@ export const slotsDataByPlatform = {
     fachai: newFachaiGames,
     revenge: []
   },
-  // YG, DG, MG, EG, HG, FG - Agora com PG e PP novos + Spirit, Tada, Revenge
+  // YG, DG, MG, EG, HG, FG - Agora com TODOS os provedores
   YGJOGO: {
     pg: newPlatformGames,
     pp: newPPGames,
-    spirit: oldPlatformGames.spirit,
-    tada: oldPlatformGames.tada,
+    amigo: newAmigoGames,
+    microgaming: newMicroGames,
+    fachai: newFachaiGames,
     revenge: []
   },
   DGJOGO: {
     pg: newPlatformGames,
     pp: newPPGames,
-    spirit: oldPlatformGames.spirit,
-    tada: oldPlatformGames.tada,
+    amigo: newAmigoGames,
+    microgaming: newMicroGames,
+    fachai: newFachaiGames,
     revenge: []
   },
   MGJOGO: {
     pg: newPlatformGames,
     pp: newPPGames,
-    spirit: oldPlatformGames.spirit,
-    tada: oldPlatformGames.tada,
+    amigo: newAmigoGames,
+    microgaming: newMicroGames,
+    fachai: newFachaiGames,
     revenge: []
   },
   EGJOGO: {
     pg: newPlatformGames,
     pp: newPPGames,
-    spirit: oldPlatformGames.spirit,
-    tada: oldPlatformGames.tada,
+    amigo: newAmigoGames,
+    microgaming: newMicroGames,
+    fachai: newFachaiGames,
     revenge: []
   },
   HGJOGO: {
     pg: newPlatformGames,
     pp: newPPGames,
-    spirit: oldPlatformGames.spirit,
-    tada: oldPlatformGames.tada,
+    amigo: newAmigoGames,
+    microgaming: newMicroGames,
+    fachai: newFachaiGames,
     revenge: []
   },
   FGJOGO: {
     pg: newPlatformGames,
     pp: newPPGames,
-    spirit: oldPlatformGames.spirit,
-    tada: oldPlatformGames.tada,
+    amigo: newAmigoGames,
+    microgaming: newMicroGames,
+    fachai: newFachaiGames,
     revenge: []
   }
 };
@@ -2913,8 +2919,9 @@ export const slotsDataByPlatform = {
 export const slotsData = {
   pg: newPlatformGames,
   pp: newPPGames,
-  spirit: oldPlatformGames.spirit,
-  tada: oldPlatformGames.tada,
+  amigo: newAmigoGames,
+  microgaming: newMicroGames,
+  fachai: newFachaiGames,
   revenge: []
 };
 
