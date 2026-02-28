@@ -2864,46 +2864,45 @@ export const slotsDataByPlatform = {
     fachai: newFachaiGames,
     revenge: []
   },
-  // YG, DG, MG, EG, HG, FG NÃO têm Amigo, Micro Gaming nem FA CHAI
-  // PP usa os jogos Pragmatic Play antigos
+  // YG, DG, MG, EG, HG, FG - Agora com PG e PP novos + Spirit, Tada, Revenge
   YGJOGO: {
     pg: newPlatformGames,
-    pp: oldPlatformGames.pragmatic,
+    pp: newPPGames,
     spirit: oldPlatformGames.spirit,
     tada: oldPlatformGames.tada,
     revenge: []
   },
   DGJOGO: {
     pg: newPlatformGames,
-    pp: oldPlatformGames.pragmatic,
+    pp: newPPGames,
     spirit: oldPlatformGames.spirit,
     tada: oldPlatformGames.tada,
     revenge: []
   },
   MGJOGO: {
     pg: newPlatformGames,
-    pp: oldPlatformGames.pragmatic,
+    pp: newPPGames,
     spirit: oldPlatformGames.spirit,
     tada: oldPlatformGames.tada,
     revenge: []
   },
   EGJOGO: {
     pg: newPlatformGames,
-    pp: oldPlatformGames.pragmatic,
+    pp: newPPGames,
     spirit: oldPlatformGames.spirit,
     tada: oldPlatformGames.tada,
     revenge: []
   },
   HGJOGO: {
     pg: newPlatformGames,
-    pp: oldPlatformGames.pragmatic,
+    pp: newPPGames,
     spirit: oldPlatformGames.spirit,
     tada: oldPlatformGames.tada,
     revenge: []
   },
   FGJOGO: {
     pg: newPlatformGames,
-    pp: oldPlatformGames.pragmatic,
+    pp: newPPGames,
     spirit: oldPlatformGames.spirit,
     tada: oldPlatformGames.tada,
     revenge: []
