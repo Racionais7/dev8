@@ -606,7 +606,7 @@ const PlatformSelector = ({ onPlatformSelect }) => {
                         <div className="relative mb-1 sm:mb-3">
                           <div className="w-12 h-12 sm:w-20 sm:h-20 transition-transform duration-300 group-hover:scale-110">
                             <img 
-                              src={platform.logo}
+                              src={platform.orbitLogo || platform.logo}
                               alt={platform.name}
                               className="w-full h-full object-contain"
                               style={{
