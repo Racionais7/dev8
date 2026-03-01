@@ -15,14 +15,14 @@ const gameProviders = [
 
 // Platform logos - orbitLogo for the spinning wheel, logo for the selection grid
 const platformLogos = [
-  { name: 'MGJOGO', logo: '/logos/MGJOGO.png', orbitLogo: '/logos/MGJOGO.png', link: 'http://mgjogo3.com/?ch=380001#/register' },
-  { name: 'EGJOGO', logo: '/logos/EGJOGO.png', orbitLogo: '/logos/EGJOGO.png', link: 'http://egjogo6.com/?ch=420001#/register' },
-  { name: 'WGJOGO', logo: '/logos/WGJOGO.png', orbitLogo: '/logos/WGJOGO.png', link: 'http://tttbot.wgjogo5.com/' },
-  { name: 'YGJOGO', logo: '/logos/YGJOGO.png', orbitLogo: '/logos/YGJOGO.png', link: 'http://ygjogo3.com/?ch=560001#/register' },
-  { name: 'DGJOGO', logo: '/logos/DGJOGO.png', orbitLogo: '/logos/DGJOGO.png', link: 'http://dgjogo4.com/?ch=760001#/register' },
-  { name: 'FGJOGO', logo: '/logos/FGJOGO.png', orbitLogo: '/logos/FGJOGO.png', link: 'http://fgjogo3.com/?ch=300001#/register' },
-  { name: 'HGJOGO', logo: '/logos/HGJOGO.png', orbitLogo: '/logos/HGJOGO.png', link: 'http://hgjogo5.com/?ch=170001#/register' },
   { name: 'AGJOGO', logo: '/logos/AGJOGO-orbit.png', orbitLogo: '/logos/AGJOGO.png', link: 'http://tttbot.agjogo.com/' },
+  { name: 'DGJOGO', logo: '/logos/DGJOGO.png', orbitLogo: '/logos/DGJOGO.png', link: 'http://dgjogo4.com/?ch=760001#/register' },
+  { name: 'YGJOGO', logo: '/logos/YGJOGO.png', orbitLogo: '/logos/YGJOGO.png', link: 'http://ygjogo3.com/?ch=560001#/register' },
+  { name: 'MGJOGO', logo: '/logos/MGJOGO.png', orbitLogo: '/logos/MGJOGO.png', link: 'http://mgjogo3.com/?ch=380001#/register' },
+  { name: 'HGJOGO', logo: '/logos/HGJOGO.png', orbitLogo: '/logos/HGJOGO.png', link: 'http://hgjogo5.com/?ch=170001#/register' },
+  { name: 'EGJOGO', logo: '/logos/EGJOGO.png', orbitLogo: '/logos/EGJOGO.png', link: 'http://egjogo6.com/?ch=420001#/register' },
+  { name: 'FGJOGO', logo: '/logos/FGJOGO.png', orbitLogo: '/logos/FGJOGO.png', link: 'http://fgjogo3.com/?ch=300001#/register' },
+  { name: 'WGJOGO', logo: '/logos/WGJOGO.png', orbitLogo: '/logos/WGJOGO.png', link: 'http://tttbot.wgjogo5.com/' },
   { name: 'BGJOGO', logo: '/logos/BGJOGO.png', orbitLogo: '/logos/BGJOGO.png', link: 'http://bot.bgjogo.com/' }
 ];
 
