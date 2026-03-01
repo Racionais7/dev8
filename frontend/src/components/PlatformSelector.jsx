@@ -15,7 +15,7 @@ const gameProviders = [
 
 // Platform logos - orbitLogo for the spinning wheel, logo for the selection grid
 const platformLogos = [
-  { name: 'AGJOGO', logo: '/logos/AGJOGO.png', orbitLogo: '/logos/AGJOGO-orbit.png', link: 'http://tttbot.agjogo.com/' },
+  { name: 'AGJOGO', logo: '/logos/AGJOGO-orbit.png', orbitLogo: '/logos/AGJOGO-orbit.png', link: 'http://tttbot.agjogo.com/' },
   { name: 'DGJOGO', logo: '/logos/DGJOGO.png', orbitLogo: '/logos/DGJOGO.png', link: 'http://dgjogo4.com/?ch=760001#/register' },
   { name: 'YGJOGO', logo: '/logos/YGJOGO.png', orbitLogo: '/logos/YGJOGO.png', link: 'http://ygjogo3.com/?ch=560001#/register' },
   { name: 'MGJOGO', logo: '/logos/MGJOGO.png', orbitLogo: '/logos/MGJOGO.png', link: 'http://mgjogo3.com/?ch=380001#/register' },
