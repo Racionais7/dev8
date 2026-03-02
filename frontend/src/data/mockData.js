@@ -2829,6 +2829,22 @@ const newMicroGames = getOrderedGames(MICROGAMING_ORDER, microgamingGamesData);
 // Jogos FA CHAI Gaming (apenas para AG, BG, WG)
 const newFachaiGames = getOrderedGames(FACHAI_ORDER, fachaiGamesData);
 
+// REVENGE Games - para MGJOGO, HGJOGO, EGJOGO, FGJOGO, DGJOGO, YGJOGO
+const revengeGames = [
+  { id: 1, name: "Fortune Mouse 2", image: "/images/revenge/Fortune Mouse 2.png", bets: ["R$ 0,50", "R$ 1,00", "R$ 2,00"], basePayout: 82, category: "Fortune", provider: "revenge" },
+  { id: 2, name: "Treasures of Aztec Rewind", image: "/images/revenge/Treasures of Aztec Rewind.png", bets: ["R$ 0,80", "R$ 1,60", "R$ 3,20"], basePayout: 78, category: "Adventure", provider: "revenge" },
+  { id: 3, name: "Fortune Tiger 2", image: "/images/revenge/Fortune Tiger 2.png", bets: ["R$ 0,50", "R$ 1,50", "R$ 3,00"], basePayout: 85, category: "Fortune", provider: "revenge" },
+  { id: 4, name: "Super Dragon Hatch", image: "/images/revenge/Super Dragon Hatch.png", bets: ["R$ 1,00", "R$ 2,00", "R$ 4,00"], basePayout: 80, category: "Dragon", provider: "revenge" },
+  { id: 5, name: "Fortune Dragon 2", image: "/images/revenge/Fortune Dragon 2.png", bets: ["R$ 0,60", "R$ 1,20", "R$ 2,40"], basePayout: 83, category: "Fortune", provider: "revenge" },
+  { id: 6, name: "Dragon Hatch Reborn", image: "/images/revenge/Dragon Hatch Reborn.png", bets: ["R$ 0,80", "R$ 1,60", "R$ 3,20"], basePayout: 79, category: "Dragon", provider: "revenge" },
+  { id: 7, name: "Fortune Ox 2", image: "/images/revenge/Fortune Ox 2.png", bets: ["R$ 0,50", "R$ 1,00", "R$ 2,50"], basePayout: 84, category: "Fortune", provider: "revenge" },
+  { id: 8, name: "Fortune Chicken", image: "/images/revenge/Fortune Chicken.png", bets: ["R$ 0,40", "R$ 0,80", "R$ 1,60"], basePayout: 81, category: "Fortune", provider: "revenge" },
+  { id: 9, name: "Fortune Monkey", image: "/images/revenge/Fortune Monkey.png", bets: ["R$ 0,50", "R$ 1,00", "R$ 2,00"], basePayout: 82, category: "Fortune", provider: "revenge" },
+  { id: 10, name: "Fortune Horse", image: "/images/revenge/Fortune Horse.png", bets: ["R$ 0,60", "R$ 1,20", "R$ 2,40"], basePayout: 80, category: "Fortune", provider: "revenge" },
+  { id: 11, name: "Fortune Dog", image: "/images/revenge/Fortune Dog.png", bets: ["R$ 0,40", "R$ 0,80", "R$ 1,60"], basePayout: 83, category: "Fortune", provider: "revenge" },
+  { id: 12, name: "Fortune Goat", image: "/images/revenge/Fortune Goat.png", bets: ["R$ 0,50", "R$ 1,00", "R$ 2,00"], basePayout: 81, category: "Fortune", provider: "revenge" }
+];
+
 // Jogos para YG, DG, MG, EG, HG, FG (antigos - sem alteração)
 const oldPlatformGames = {
   pg: getOrderedGames(PG_SOFT_ORDER, pgGamesData),
@@ -2873,42 +2889,42 @@ export const slotsDataByPlatform = {
     pp: newPPGames,
     spirit: oldPlatformGames.spirit,
     tada: oldPlatformGames.tada,
-    revenge: []
+    revenge: revengeGames
   },
   DGJOGO: {
     pg: newPlatformGames,
     pp: newPPGames,
     spirit: oldPlatformGames.spirit,
     tada: oldPlatformGames.tada,
-    revenge: []
+    revenge: revengeGames
   },
   MGJOGO: {
     pg: newPlatformGames,
     pp: newPPGames,
     spirit: oldPlatformGames.spirit,
     tada: oldPlatformGames.tada,
-    revenge: []
+    revenge: revengeGames
   },
   EGJOGO: {
     pg: newPlatformGames,
     pp: newPPGames,
     spirit: oldPlatformGames.spirit,
     tada: oldPlatformGames.tada,
-    revenge: []
+    revenge: revengeGames
   },
   HGJOGO: {
     pg: newPlatformGames,
     pp: newPPGames,
     spirit: oldPlatformGames.spirit,
     tada: oldPlatformGames.tada,
-    revenge: []
+    revenge: revengeGames
   },
   FGJOGO: {
     pg: newPlatformGames,
     pp: newPPGames,
     spirit: oldPlatformGames.spirit,
     tada: oldPlatformGames.tada,
-    revenge: []
+    revenge: revengeGames
   }
 };
 
@@ -2918,7 +2934,7 @@ export const slotsData = {
   pp: newPPGames,
   spirit: oldPlatformGames.spirit,
   tada: oldPlatformGames.tada,
-  revenge: []
+  revenge: revengeGames
 };
 
 // Provider ranking por plataforma
