@@ -375,8 +375,8 @@ const PlatformSelector = ({ onPlatformSelect }) => {
                             }}
                           />
                           
-                          {/* Tooltip com nome da plataforma */}
-                          <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 px-2 py-1 rounded bg-black/80 text-[10px] text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap pointer-events-none z-50">
+                          {/* Tooltip com nome da plataforma - EM CIMA */}
+                          <div className="absolute -top-8 left-1/2 -translate-x-1/2 px-2 py-1 rounded bg-black/80 text-[10px] text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap pointer-events-none z-50">
                             {platform.name}
                           </div>
                         </button>
