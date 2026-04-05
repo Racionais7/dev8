@@ -671,11 +671,18 @@ const PlatformSelector = ({ onPlatformSelect }) => {
                           </div>
                         </div>
                         
-                        {/* Live indicator - Hidden on mobile */}
-                        <div className="hidden sm:flex items-center gap-1.5 mt-2 text-xs text-emerald-400">
-                          <div className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                          <span>Online</span>
-                        </div>
+                        {/* Botão secundário - IR PARA PLATAFORMA */}
+                        <a
+                          href={platform.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={(e) => e.stopPropagation()}
+                          className="w-full mt-2 py-1.5 px-2 rounded-lg text-[9px] sm:text-xs font-semibold text-gray-300 hover:text-white bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 transition-all duration-200 text-center block"
+                          data-testid={`platform-link-${platform.name}`}
+                        >
+                          <span className="hidden sm:inline">IR PARA PLATAFORMA</span>
+                          <span className="sm:hidden">ACESSAR</span>
+                        </a>
                       </div>
                     </div>
                   </button>
