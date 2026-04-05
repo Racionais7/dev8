@@ -313,8 +313,11 @@ const PlatformSelector = ({ onPlatformSelect }) => {
                   </div>
                 </div>
                 
-                {/* ═══════ ORBITING PLATFORM LOGOS ═══════ */}
-                <div className="absolute inset-0 animate-orbit-main hover:[animation-play-state:paused]">
+                {/* ═══════ ORBITING PLATFORM LOGOS - CLICÁVEIS ═══════ */}
+                <div 
+                  className="absolute inset-0 animate-orbit-main"
+                  style={{ pointerEvents: 'none' }}
+                >
                   {platformLogos.map((platform, index) => {
                     const angle = (index * 40 - 90) * (Math.PI / 180);
                     const radiusPercent = 43;
@@ -327,36 +330,54 @@ const PlatformSelector = ({ onPlatformSelect }) => {
                         href={platform.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="absolute transform -translate-x-1/2 -translate-y-1/2 animate-counter-orbit hover:[animation-play-state:paused] z-20"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          // Força abertura em nova aba
+                          window.open(platform.link, '_blank', 'noopener,noreferrer');
+                          e.preventDefault();
+                        }}
+                        className="absolute animate-counter-orbit cursor-pointer"
                         style={{
                           left: `${x}%`,
                           top: `${y}%`,
+                          transform: 'translate(-50%, -50%)',
+                          pointerEvents: 'auto',
+                          zIndex: 100,
                         }}
                         data-testid={`orbit-platform-${platform.name}`}
+                        title={`Abrir ${platform.name}`}
                       >
-                        <div className="relative group cursor-pointer">
+                        <div 
+                          className="relative group"
+                          style={{ pointerEvents: 'auto' }}
+                        >
+                          {/* Área clicável expandida invisível */}
+                          <div 
+                            className="absolute inset-[-20px] rounded-full"
+                            style={{ pointerEvents: 'auto' }}
+                          />
+                          
                           {/* Glow trail effect */}
                           <div 
-                            className="absolute inset-[-50%] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
+                            className="absolute inset-[-50%] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                             style={{
-                              background: 'radial-gradient(circle, rgba(45, 212, 191, 0.4) 0%, transparent 70%)',
-                              filter: 'blur(15px)'
+                              background: 'radial-gradient(circle, rgba(45, 212, 191, 0.5) 0%, transparent 70%)',
+                              filter: 'blur(15px)',
+                              pointerEvents: 'none'
                             }}
                           />
                           
                           {/* Logo container with hover effects */}
                           <div 
-                            className="relative w-14 h-14 sm:w-16 sm:h-16 lg:w-[72px] lg:h-[72px] transition-all duration-300 ease-out group-hover:scale-125"
-                            style={{
-                              animationDelay: `${index * 0.2}s`
-                            }}
+                            className="relative w-14 h-14 sm:w-16 sm:h-16 lg:w-[72px] lg:h-[72px] transition-all duration-300 ease-out group-hover:scale-130"
                           >
                             <img 
                               src={platform.orbitLogo || platform.logo}
                               alt={platform.name}
-                              className="w-full h-full object-contain transition-all duration-300 group-hover:brightness-125 pointer-events-none"
+                              className="w-full h-full object-contain transition-all duration-300 group-hover:brightness-125"
                               style={{
-                                filter: 'drop-shadow(0 4px 15px rgba(0, 0, 0, 0.5))'
+                                filter: 'drop-shadow(0 4px 15px rgba(0, 0, 0, 0.5))',
+                                pointerEvents: 'none'
                               }}
                               draggable="false"
                             />
@@ -364,12 +385,16 @@ const PlatformSelector = ({ onPlatformSelect }) => {
                           
                           {/* Hover ring */}
                           <div 
-                            className="absolute inset-[-8px] rounded-full border-2 border-teal-400/0 group-hover:border-teal-400/60 transition-all duration-300 group-hover:scale-110 pointer-events-none"
+                            className="absolute inset-[-8px] rounded-full border-2 border-transparent group-hover:border-teal-400/70 transition-all duration-300 group-hover:scale-115"
+                            style={{ pointerEvents: 'none' }}
                           />
                           
                           {/* Tooltip com nome da plataforma - EM CIMA */}
-                          <div className="absolute -top-10 left-1/2 -translate-x-1/2 px-3 py-1.5 rounded-lg bg-teal-500 text-[11px] text-white font-bold opacity-0 group-hover:opacity-100 transition-all duration-200 whitespace-nowrap pointer-events-none z-50 shadow-lg">
-                            {platform.name}
+                          <div 
+                            className="absolute -top-12 left-1/2 -translate-x-1/2 px-3 py-1.5 rounded-lg bg-teal-500 text-[11px] text-white font-bold opacity-0 group-hover:opacity-100 transition-all duration-200 whitespace-nowrap shadow-lg"
+                            style={{ pointerEvents: 'none', zIndex: 200 }}
+                          >
+                            Abrir {platform.name}
                             <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-teal-500 rotate-45"></div>
                           </div>
                         </div>
@@ -765,6 +790,12 @@ const PlatformSelector = ({ onPlatformSelect }) => {
       <style>{`
         .scrollbar-hide::-webkit-scrollbar { display: none; }
         .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+        /* ═══════ SCALE HELPERS FOR HOVER ═══════ */
+        .group-hover\\:scale-130:hover { transform: scale(1.3); }
+        .group:hover .group-hover\\:scale-130 { transform: scale(1.3); }
+        .group-hover\\:scale-115:hover { transform: scale(1.15); }
+        .group:hover .group-hover\\:scale-115 { transform: scale(1.15); }
 
         /* ═══════ PREMIUM ANIMATED EFFECTS ═══════ */
         
