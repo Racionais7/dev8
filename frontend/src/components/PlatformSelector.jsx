@@ -270,7 +270,7 @@ const PlatformSelector = ({ onPlatformSelect }) => {
                 </div>
                 
                 {/* ═══════ JOGO CLUB CENTRAL LOGO ═══════ */}
-                <div className="absolute inset-0 flex items-center justify-center z-10">
+                <div className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
                   <div className="relative w-[140px] h-[140px] sm:w-[170px] sm:h-[170px] lg:w-[200px] lg:h-[200px] animate-logo-hover">
                     
                     {/* Rotating glow behind logo */}
