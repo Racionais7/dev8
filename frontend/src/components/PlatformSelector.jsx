@@ -314,7 +314,7 @@ const PlatformSelector = ({ onPlatformSelect }) => {
                 </div>
                 
                 {/* ═══════ ORBITING PLATFORM LOGOS ═══════ */}
-                <div className="absolute inset-0 animate-orbit-main">
+                <div className="absolute inset-0 animate-orbit-main hover:[animation-play-state:paused]">
                   {platformLogos.map((platform, index) => {
                     const angle = (index * 40 - 90) * (Math.PI / 180);
                     const radiusPercent = 43;
@@ -322,28 +322,22 @@ const PlatformSelector = ({ onPlatformSelect }) => {
                     const y = 50 + radiusPercent * Math.sin(angle);
                     
                     return (
-                      <div
+                      <a
                         key={platform.name}
-                        className="absolute transform -translate-x-1/2 -translate-y-1/2 animate-counter-orbit"
+                        href={platform.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="absolute transform -translate-x-1/2 -translate-y-1/2 animate-counter-orbit hover:[animation-play-state:paused] z-20"
                         style={{
                           left: `${x}%`,
                           top: `${y}%`,
                         }}
+                        data-testid={`orbit-platform-${platform.name}`}
                       >
-                        <button 
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            if (platform.link) {
-                              window.open(platform.link, '_blank');
-                            }
-                          }}
-                          className="relative group cursor-pointer focus:outline-none"
-                          title={`Abrir ${platform.name}`}
-                          data-testid={`orbit-platform-${platform.name}`}
-                        >
+                        <div className="relative group cursor-pointer">
                           {/* Glow trail effect */}
                           <div 
-                            className="absolute inset-[-50%] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                            className="absolute inset-[-50%] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
                             style={{
                               background: 'radial-gradient(circle, rgba(45, 212, 191, 0.4) 0%, transparent 70%)',
                               filter: 'blur(15px)'
@@ -352,7 +346,7 @@ const PlatformSelector = ({ onPlatformSelect }) => {
                           
                           {/* Logo container with hover effects */}
                           <div 
-                            className="relative w-14 h-14 sm:w-16 sm:h-16 lg:w-[72px] lg:h-[72px] transition-all duration-300 ease-out group-hover:scale-125 animate-platform-bob"
+                            className="relative w-14 h-14 sm:w-16 sm:h-16 lg:w-[72px] lg:h-[72px] transition-all duration-300 ease-out group-hover:scale-125"
                             style={{
                               animationDelay: `${index * 0.2}s`
                             }}
@@ -360,27 +354,26 @@ const PlatformSelector = ({ onPlatformSelect }) => {
                             <img 
                               src={platform.orbitLogo || platform.logo}
                               alt={platform.name}
-                              className="w-full h-full object-contain transition-all duration-300 group-hover:brightness-110"
+                              className="w-full h-full object-contain transition-all duration-300 group-hover:brightness-125 pointer-events-none"
                               style={{
                                 filter: 'drop-shadow(0 4px 15px rgba(0, 0, 0, 0.5))'
                               }}
+                              draggable="false"
                             />
                           </div>
                           
                           {/* Hover ring */}
                           <div 
-                            className="absolute inset-[-8px] rounded-full border border-teal-400/0 group-hover:border-teal-400/50 transition-all duration-300 group-hover:scale-110"
-                            style={{
-                              boxShadow: '0 0 0 0 rgba(45, 212, 191, 0)',
-                            }}
+                            className="absolute inset-[-8px] rounded-full border-2 border-teal-400/0 group-hover:border-teal-400/60 transition-all duration-300 group-hover:scale-110 pointer-events-none"
                           />
                           
                           {/* Tooltip com nome da plataforma - EM CIMA */}
-                          <div className="absolute -top-8 left-1/2 -translate-x-1/2 px-2 py-1 rounded bg-black/80 text-[10px] text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap pointer-events-none z-50">
+                          <div className="absolute -top-10 left-1/2 -translate-x-1/2 px-3 py-1.5 rounded-lg bg-teal-500 text-[11px] text-white font-bold opacity-0 group-hover:opacity-100 transition-all duration-200 whitespace-nowrap pointer-events-none z-50 shadow-lg">
                             {platform.name}
+                            <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-teal-500 rotate-45"></div>
                           </div>
-                        </button>
-                      </div>
+                        </div>
+                      </a>
                     );
                   })}
                 </div>
