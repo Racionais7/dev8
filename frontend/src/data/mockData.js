@@ -12,6 +12,7 @@ export const providers = {
 
 // Links de cadastro por plataforma
 export const platformLinks = {
+  VGJOGO: "https://vgjogo2.com/?ch=230000",
   MGJOGO: "http://mgjogo3.com/?ch=380001#/register",
   EGJOGO: "http://egjogo6.com/?ch=420001#/register",
   WGJOGO: "http://tttbot.wgjogo5.com/",
@@ -2855,6 +2856,14 @@ const oldPlatformGames = {
 
 // Dados exportados por plataforma
 export const slotsDataByPlatform = {
+  // VGJOGO - mesmo sistema das plataformas padrão (PG, PP, Spirit, Tada, Revenge)
+  VGJOGO: {
+    pg: newPlatformGames,
+    pp: newPPGames,
+    spirit: oldPlatformGames.spirit,
+    tada: oldPlatformGames.tada,
+    revenge: revengeGames
+  },
   // AG, BG, WG têm TODOS os providers: PG, PP, Amigo, Micro Gaming, FA CHAI, Tada, Revenge
   AGJOGO: {
     pg: newPlatformGames,

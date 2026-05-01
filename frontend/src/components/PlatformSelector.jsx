@@ -15,6 +15,7 @@ const gameProviders = [
 
 // Platform logos - orbitLogo for the spinning wheel, logo for the selection grid
 const platformLogos = [
+  { name: 'VGJOGO', logo: '/logos/VGJOGO.png', orbitLogo: '/logos/VGJOGO.png', link: 'https://vgjogo2.com/?ch=230000' },
   { name: 'MGJOGO', logo: '/logos/MGJOGO.png', orbitLogo: '/logos/MGJOGO.png', link: 'http://mgjogo3.com/?ch=380001#/register' },
   { name: 'WGJOGO', logo: '/logos/WGJOGO.png', orbitLogo: '/logos/WGJOGO.png', link: 'http://tttbot.wgjogo5.com/' },
   { name: 'HGJOGO', logo: '/logos/HGJOGO.png', orbitLogo: '/logos/HGJOGO.png', link: 'http://hgjogo5.com/?ch=170001#/register' },
@@ -319,7 +320,7 @@ const PlatformSelector = ({ onPlatformSelect }) => {
                   style={{ pointerEvents: 'none' }}
                 >
                   {platformLogos.map((platform, index) => {
-                    const angle = (index * 40 - 90) * (Math.PI / 180);
+                    const angle = (index * (360 / platformLogos.length) - 90) * (Math.PI / 180);
                     const radiusPercent = 43;
                     const x = 50 + radiusPercent * Math.cos(angle);
                     const y = 50 + radiusPercent * Math.sin(angle);
@@ -425,7 +426,7 @@ const PlatformSelector = ({ onPlatformSelect }) => {
               {/* Subtitle */}
               <div className={`mt-8 text-center transition-all duration-500 delay-200 ${heroVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
                 <p className="text-gray-400 text-sm sm:text-base">
-                  <span className="text-teal-400 font-semibold animate-text-glow">9 Plataformas</span>
+                  <span className="text-teal-400 font-semibold animate-text-glow">10 Plataformas</span>
                   <span className="mx-3 text-gray-600">•</span>
                   <span className="text-gray-300">Análise Profissional de Padrões</span>
                 </p>
@@ -746,7 +747,7 @@ const PlatformSelector = ({ onPlatformSelect }) => {
           {/* LINE 3: Platform Logos Grid */}
           <div className="py-6 bg-[#08080e]">
             <div className="max-w-7xl mx-auto px-4 sm:px-6">
-              <div className="grid grid-cols-3 sm:grid-cols-5 lg:grid-cols-9 gap-2.5 max-w-4xl mx-auto">
+              <div className="grid grid-cols-3 sm:grid-cols-5 lg:grid-cols-5 gap-2.5 max-w-4xl mx-auto">
                 {platformLogos.map((p, idx) => (
                   <div 
                     key={p.name}
