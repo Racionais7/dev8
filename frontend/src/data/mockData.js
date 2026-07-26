@@ -21,7 +21,8 @@ export const platformLinks = {
   FGJOGO: "http://fgjogo3.com/?ch=300001#/register",
   HGJOGO: "http://hgjogo5.com/?ch=170001#/register",
   AGJOGO: "http://tttbot.agjogo.com/",
-  BGJOGO: "http://bot.bgjogo.com/"
+  BGJOGO: "http://bot.bgjogo.com/",
+  XGJOGO: "https://xgjogo2.com/?ch=350000"
 };
 
 // Imagem da plataforma
@@ -2929,6 +2930,14 @@ export const slotsDataByPlatform = {
     revenge: revengeGames
   },
   FGJOGO: {
+    pg: newPlatformGames,
+    pp: newPPGames,
+    spirit: oldPlatformGames.spirit,
+    tada: oldPlatformGames.tada,
+    revenge: revengeGames
+  },
+  // XGJOGO - provedores idênticos à VGJOGO
+  XGJOGO: {
     pg: newPlatformGames,
     pp: newPPGames,
     spirit: oldPlatformGames.spirit,

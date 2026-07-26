@@ -24,7 +24,8 @@ const platformLogos = [
   { name: 'AGJOGO', logo: '/logos/AGJOGO.png', orbitLogo: '/logos/AGJOGO-orbit.png', link: 'http://tttbot.agjogo.com/' },
   { name: 'DGJOGO', logo: '/logos/DGJOGO.png', orbitLogo: '/logos/DGJOGO.png', link: 'http://dgjogo4.com/?ch=760001#/register' },
   { name: 'YGJOGO', logo: '/logos/YGJOGO.png', orbitLogo: '/logos/YGJOGO.png', link: 'http://ygjogo3.com/?ch=560001#/register' },
-  { name: 'BGJOGO', logo: '/logos/BGJOGO.png', orbitLogo: '/logos/BGJOGO.png', link: 'http://bot.bgjogo.com/' }
+  { name: 'BGJOGO', logo: '/logos/BGJOGO.png', orbitLogo: '/logos/BGJOGO.png', link: 'http://bot.bgjogo.com/' },
+  { name: 'XGJOGO', logo: '/logos/XGJOGO.png', orbitLogo: '/logos/XGJOGO.png', link: 'https://xgjogo2.com/?ch=350000' }
 ];
 
 // FGJOGO CTA image
@@ -426,7 +427,7 @@ const PlatformSelector = ({ onPlatformSelect }) => {
               {/* Subtitle */}
               <div className={`mt-8 text-center transition-all duration-500 delay-200 ${heroVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
                 <p className="text-gray-400 text-sm sm:text-base">
-                  <span className="text-teal-400 font-semibold animate-text-glow">10 Plataformas</span>
+                  <span className="text-teal-400 font-semibold animate-text-glow">11 Plataformas</span>
                   <span className="mx-3 text-gray-600">•</span>
                   <span className="text-gray-300">Análise Profissional de Padrões</span>
                 </p>
